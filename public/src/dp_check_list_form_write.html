@@ -1,0 +1,54 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        <!-- edit tool -->
+        <div class="btn-top-holder">
+            <button type="button" class="btn btn-white ml-2 map-e">빠른 실행</button>
+        </div>
+        @@include('./include/platform-tools.html')
+        <!-- // END drawer -->
+        <div class="sidebar-depth sidebar-wide" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dp-process">
+                        <!-- 프로젝트 등록 -->
+                        <div class="distribution-inner">
+                            <div class="container-fluid d-flex align-items-center py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <a href="dp_check_list_form.html" class="pr-2"><i
+                                            class="material-icons">arrow_back</i></a>
+                                    <div class="mr-24pt">
+                                        <h3 class="mb-0">체크리스트 양식 관리</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="eventName">체크리스트 명</label>
+                                    <input type="text" class="form-line" id="eventName" placeholder="제품명을 입력해주세요.">
+                                </div>
+                                <div class="my-32pt">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="#n" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                        <a href="dp_check_list_form_write2.html" class="btn btn-outline-accent ml-0">추가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/platform-footer.html')

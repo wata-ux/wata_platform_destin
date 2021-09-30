@@ -1,0 +1,179 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-tools.html')
+        <div class="sidebar-depth sidebar-wide" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+                <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+                    <div class="flex title-row">
+                        <h3 class="d-flex align-items-center mb-0 ">체크리스트 양식 01</h3>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">더보기</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents-view">
+                    <div class="page-separator mt-5">
+                        <div class="page-separator__text">체크리스트</div>
+                    </div>
+
+
+                    <div class="accordion js-accordion accordion--boxed list-group-flush list-bg-light mb-4">
+                        <div class="accordion__item open">
+                            <div class="d-flex align-items-center px-4 py-3">
+                                <span class="flex">
+                                    <input type="text" class="form-control font-size-16pt" value="조립 1공정(준비공정)">
+                                </span>
+                                <div class="mx-3">
+                                    <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                </div>
+                                <div class="media-right ml-auto">
+                                    <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                </div>
+                            </div>
+                            <div class="accordion__menu collapse show" data-toggle="dragula" data-dragula-containers='["#check-item01"]' data-dragula-moves="js-dragula-handle">
+                                <div id="check-item01" class="list-group list-group-flush border-top-1">
+                                    <div class="list-group-item d-flex">
+                                        <span class="flex">
+                                            <input type="text" class="form-control font-size-16pt" value="Production check sheet 및 S/N 확인">
+                                        </span>
+                                        <div class="mx-3">
+                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="ml-auto">
+                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item d-flex">
+                                        <span class="flex">
+                                            <input type="text" class="form-control font-size-16pt" value="생산출고자재 품목/수량 출고전표와 일치">
+                                        </span>
+                                        <div class="mx-3">
+                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="media-right ml-auto">
+                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item d-flex">
+                                        <span class="flex">
+                                            <input type="text" class="form-control font-size-16pt" value="작업표준에 따른 라벨 부착 확인">
+                                        </span>
+                                        <div class="mx-3">
+                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="media-right ml-auto">
+                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item d-flex">
+                                        <span class="flex">
+                                            <input type="text" class="form-control font-size-16pt" value="덕트 및 딘레일 절단 치수 확인">
+                                        </span>
+                                        <div class="mx-3">
+                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="media-right ml-auto">
+                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item d-flex">
+                                        <span class="flex">
+                                            <input type="text" class="form-control font-size-16pt" value="공정별 자재 투입 확인">
+                                        </span>
+                                        <div class="mx-3">
+                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                        </div>
+                                        <div class="media-right ml-auto">
+                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center border-top-1 p-3">
+                                    <a href="#n" class="btn text-danger"><i class="material-icons">add</i>항목 추가</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center p-3">
+                            <a href="#n" class="btn btn-sm btn-rounded btn-accent"><i class="material-icons">add</i>공정 추가</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center p-3">
+                        <a href="#n" class="btn btn-rounded btn-secondary mx-1">취소하기</a>
+                        <a href="#n" class="btn btn-rounded btn-dark mx-1">적용하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact">
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane" id="dp-process">
+                        <div class="distribution-inner">
+                            <div class="container-fluid py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <a href="dp_process_landing.html" class="circle-pin pr-2"><i class="material-icons">arrow_back</i></a>
+                                    <div class="mr-24pt">
+                                        <h3 class="mb-0">체크리스트 양식 관리</h3>
+                                    </div>
+                                    <a href="dp_check_list_form_write.html" class="btn btn-outline-dark ml-auto">추가</a>
+                                </div>
+                            </div>
+                            <div class="list-opt-box">
+                                <div class="cell serach-box">
+                                    <input type="text" placeholder="제품명, ID검색">
+                                    <a href="#n" class="btn btn-secondary btn-sm ml-auto">검색</a>
+                                </div>
+                            </div>
+                            <div class="list-group row-list list-group-flush mb-4">
+                                <div class="list-group-item d-flex px-4 py-3">
+                                    <div class="flex d-flex align-items-center mr-16pt">
+                                        <div class="flex list-els">
+                                            <div class="card-title">기본</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false"
+                                            class="text-muted py-3 px-2"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex px-4 py-3">
+                                    <div class="flex d-flex align-items-center mr-16pt">
+                                        <div class="flex list-els">
+                                            <div class="card-title">체크리스트 양식 01</div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a href="#" data-toggle="dropdown" data-caret="false"
+                                            class="text-muted py-3 px-2"><i class="material-icons">more_vert</i></a>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="#n" class="dropdown-item text-primary">수정</a>
+                                            <a href="#n" class="dropdown-item text-danger">삭제</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/platform-footer.html')

@@ -1,0 +1,88 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
+    @@include('./include/platform-topbar.html')
+    <div class="mdk-drawer-layout__content page-content">
+        <!-- edit tool -->
+        <div class="btn-top-holder">
+            <button type="button" class="btn btn-white ml-2 map-e">빠른 실행</button>
+        </div>
+        @@include('./include/platform-tools.html')
+        <div class="sidebar-depth sidebar-wide" data-perfect-scrollbar>
+            <div class="sidebar-depth-wrap">
+            </div>
+        </div>
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dp-process">
+                        <div class="distribution-inner">
+                            <div class="container-fluid d-flex align-items-center py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <a href="dp_check_list.html" class="pr-2"><i class="material-icons">arrow_back</i></a>
+                                    <div class="mr-24pt">
+                                        <h3 class="mb-0">공정 체크리스트 관리</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">프로젝트 명</label>
+                                    <input type="number" class="form-line" id="" >
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label text-50 essential">작업시작일</label>
+                                    <input id="flatpickrSample02" type="hidden"
+                                        class="form-control flatpickr-input form-line" data-toggle="flatpickr" value="today">
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">제품</label>
+                                    <select name="category" class="form-line">
+                                        <option value="제품01">제품01</option>
+                                        <option value="제품02">제품02</option>
+                                        <option value="제품03">제품03</option>
+                                        <option value="제품04">제품04</option>
+                                        <option value="제품05">제품05</option>
+                                        <option value="제품06">제품06</option>
+                                        <option value="제품07">제품07</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">거래처</label>
+                                    <select name="category" class="form-line">
+                                        <option value="거래처01">거래처01</option>
+                                        <option value="거래처02">거래처02</option>
+                                        <option value="거래처03">거래처03</option>
+                                        <option value="거래처04">거래처04</option>
+                                        <option value="거래처05">거래처05</option>
+                                        <option value="거래처06">거래처06</option>
+                                        <option value="거래처07">거래처07</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-32pt">
+                                    <label class="form-label mb-0 text-50 essential" for="">체크리스트 양식</label>
+                                    <select name="category" class="form-line">
+                                        <option value="기본">기본</option>
+                                        <option value="사용자01">사용자01</option>
+                                        <option value="사용자02">사용자02</option>
+                                    </select>
+                                </div>
+                                <div class="my-32pt">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <a href="#n" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                        <a href="dp_check_list_manage.html" class="btn btn-outline-accent ml-0">추가하기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('./include/platform-footer.html')
