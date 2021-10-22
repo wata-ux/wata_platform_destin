@@ -478,7 +478,7 @@
 
 
         <!-- // END drawer -->
-        <div class="sidebar-depth sidebar-wide" data-perfect-scrollbar>
+        <div class="sidebar-depth sidebar-wide">
             <div class="sidebar-depth-wrap">
             </div>
         </div>
@@ -508,7 +508,7 @@
         </ul>
     </div>
 </div>
-            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+            <div class="sidebar sidebar-left flex sidebar-secondary">
                 <div class="tab-content">
                     <div class="tab-pane active" id="dp-process">
                         <!-- 프로젝트 등록 -->
@@ -726,12 +726,6 @@
             $(e.target).parent().addClass('active')
         })
     })()
-
-    var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
-    if (!is_mobile) {
-        // whatever the init call is
-        perfectScroller.init()
-    }
 </script>
 
 <!-- Dragula -->

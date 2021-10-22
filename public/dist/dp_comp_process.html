@@ -477,7 +477,7 @@
     </div>
 
 
-        <div class="sidebar-depth sidebar-wide" data-perfect-scrollbar>
+        <div class="sidebar-depth sidebar-wide">
             <div class="sidebar-depth-wrap">
                 <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
                     <div class="flex title-row">
@@ -1260,7 +1260,7 @@
         </ul>
     </div>
 </div>
-            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+            <div class="sidebar sidebar-left flex sidebar-secondary">
                 <div class="tab-content">
                     <div class="tab-pane" id="dp-process">
                         <div class="distribution-inner">
@@ -1383,7 +1383,7 @@
                 <div class="title-group mb-4">
                     <h5 class="modal-title" id="projectAddLabel">Production check sheet 및 S/N 확인</h5>
                 </div>
-                <div class="table-cover" data-perfect-scrollbar>
+                <div class="table-cover">
                     <table class="table mb-4 thead-bg-light">
                         <thead>
                             <tr>
@@ -1670,12 +1670,6 @@
             $(e.target).parent().addClass('active')
         })
     })()
-
-    var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
-    if (!is_mobile) {
-        // whatever the init call is
-        perfectScroller.init()
-    }
 </script>
 
 <!-- Dragula -->

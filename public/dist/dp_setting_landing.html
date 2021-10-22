@@ -482,7 +482,7 @@
             <!-- open btn -->
             <!-- <a href="#0" class="cd-panel__show js-cd-panel-trigger" data-panel="main">Close</a> -->
             <div class="cd-panel__container">
-                <div class="cd-panel__content p-4" data-perfect-scrollbar>
+                <div class="cd-panel__content p-4">
                     <div class="d-flex flex-row align-items-center mb-0 pb-4">
                         <div class="flex">
                             <h3 class="d-flex align-items-center mb-0">실시간 모니터링</h3>
@@ -698,7 +698,7 @@
         </ul>
     </div>
 </div>
-            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+            <div class="sidebar sidebar-left flex sidebar-secondary">
                 <div class="tab-content">
                     <div class="tab-pane" id="dp-process">
                         <!-- 프로젝트 등록 -->
@@ -980,12 +980,6 @@
             $(e.target).parent().addClass('active')
         })
     })()
-
-    var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
-    if (!is_mobile) {
-        // whatever the init call is
-        perfectScroller.init()
-    }
 </script>
 
 <!-- Dragula -->

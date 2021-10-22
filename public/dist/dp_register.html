@@ -480,7 +480,7 @@
         <div class="cd-panel cd-panel--from-right js-cd-panel-main cd-panel--is-visible">
             <a href="#0" class="cd-panel__close js-cd-close">Close</a>
             <div class="cd-panel__container">
-                <div class="cd-panel__content p-4" data-perfect-scrollbar>
+                <div class="cd-panel__content p-4">
                     <div class="d-flex flex-row align-items-center mb-0 pb-4">
                         <div class="flex">
                             <h3 class="d-flex align-items-center mb-0">히스토리</h3>
@@ -580,7 +580,7 @@
                 </div> <!-- cd-panel__content -->
             </div>
         </div>
-        <div class="sidebar-depth sidebar-depth" data-perfect-scrollbar>
+        <div class="sidebar-depth sidebar-depth">
             <div class="sidebar-depth-wrap">
                 <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
                     <div class="flex title-row">
@@ -705,7 +705,7 @@
         </ul>
     </div>
 </div>
-            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+            <div class="sidebar sidebar-left flex sidebar-secondary">
                 <div class="tab-content">
                     <div class="tab-pane" id="sm-process">
                         <div class="distribution-inner">
@@ -970,12 +970,6 @@
             $(e.target).parent().addClass('active')
         })
     })()
-
-    var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
-    if (!is_mobile) {
-        // whatever the init call is
-        perfectScroller.init()
-    }
 </script>
 
 <!-- Dragula -->
