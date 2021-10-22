@@ -2008,9 +2008,9 @@ platform map
     .navbar {
         position: fixed;
         z-index: 2;
-        width: calc(100% - 64px);
-        padding: 0 3rem 0 0;
-        margin-left: 64px;
+        width: 100%;
+        padding: 0 1.5rem;
+        margin-left: 0;
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         height: 64px;
@@ -2160,7 +2160,7 @@ platform map
     }
 }
 .nav-search{
-    display: flex;
+    display: none;
     align-items: center;
     background-color: #fff;
     height: 64px;
@@ -2505,8 +2505,8 @@ em.none-list{
     z-index: 2;
     background-color: #fff;
     &.sidebar-wide{
-        left: 64px;
-        width: calc(100% - 64px);
+        left: 0;
+        width: 100%;
         border-left: 1px solid $border-color;
     }
     a.sidebar-depth-close{
@@ -9938,5 +9938,26 @@ xnugget info
         background-color: #fff;
         border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 50%;
+    }
+}
+
+
+@media (min-width:555px) {
+    .d-wi-none{
+        display: none !important;
+    }
+    .layout-compact{
+        .navbar{
+            width: calc(100% - 64px);
+            padding: 0 3rem 0 0;
+            margin-left: 64px;
+        }
+    } 
+    .nav-search{
+        display: flex;
+    }
+    .sidebar-depth.sidebar-wide{
+        left: 64px;
+        width: 100%;
     }
 }
