@@ -182,6 +182,12 @@
                 $(e.target).parent().addClass('active')
             })
         })()
+
+        var is_mobile = ((/Mobile|iPhone|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera) ? true : false);
+        if ( !is_mobile ) {
+  // whatever the init call is
+  perfectScroller.init()
+}
     </script>
 
     <!-- Dragula -->
