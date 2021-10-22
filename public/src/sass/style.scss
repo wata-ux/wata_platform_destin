@@ -2507,6 +2507,7 @@ em.none-list{
     &.sidebar-wide{
         left: 0;
         width: 100%;
+        height: 100%;
     }
     a.sidebar-depth-close{
         position: fixed;
@@ -9941,7 +9942,7 @@ xnugget info
 }
 
 
-@media (min-width:555px) {
+@media (min-width:769px) {
     .d-wi-none{
         display: none !important;
     }
