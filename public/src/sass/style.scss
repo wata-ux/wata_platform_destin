@@ -2507,7 +2507,6 @@ em.none-list{
     &.sidebar-wide{
         left: 0;
         width: 100%;
-        border-left: 1px solid $border-color;
     }
     a.sidebar-depth-close{
         position: fixed;
@@ -9958,6 +9957,7 @@ xnugget info
     }
     .sidebar-depth.sidebar-wide{
         left: 64px;
-        width: 100%;
+        width: calc(100% - 64px);
+        border-left: 1px solid $border-color;
     }
 }
