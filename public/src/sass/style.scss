@@ -5744,6 +5744,12 @@ a.cd-filter-trigger {
                 }
             }
         }
+        .els{
+            max-width: 250px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
     .accordion-menu{
         border-top: 1px solid $border-color;

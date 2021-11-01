@@ -348,11 +348,6 @@
         </div>
     </div>
 </div>
-        <div class="page-cover">
-            <div class="d-flex align-items-center justify-content-center">
-                <p class="text-30" style="font-size: 2.5rem; padding-top: 10rem">생성된 프로젝트가 없습니다.</p>
-            </div>
-        </div>
     </div>
     <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
         <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
@@ -389,74 +384,70 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="dp-process">
                         <div class="distribution-inner">
-                            <div class="container-fluid py-4 mb-4">
+                            <div class="container-fluid py-4">
                                 <div class="flex d-flex align-items-center">
-                                    <a href="dp_check_list.html" class="circle-pin pr-2"><i
+                                    <a href="st_measuring_landing.html" class="circle-pin pr-2"><i
                                             class="material-icons">arrow_back</i></a>
                                     <div class="mr-24pt">
-                                        <h3 class="mb-0">공정 체크리스트</h3>
+                                        <h3 class="mb-0">공장 관리</h3>
                                     </div>
+                                    <a href="st_client_write.html" class="btn btn-outline-dark ml-auto">공장 추가</a>
                                 </div>
                             </div>
-                            <div class="container-fluid">
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">프로젝트명</label>
-                                    <input type="text" class="form-line">
+                            <div class="list-opt-box">
+                                <div class="cell serach-box">
+                                    <input type="text" placeholder="검색어를 입력해주세요.">
+                                    <a href="#n" class="btn btn-secondary btn-sm ml-auto">검색</a>
                                 </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">공장리스트</label>
-                                    <select name="category" class="form-line">
-                                        <option value="">공장을 지정해 주세요</option>
-                                        <option value="">공장1</option>
-                                        <option value="">공장2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">제품명</label>
-                                    <input type="text" class="form-line">
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">시리얼 번호</label>
-                                    <input type="text" class="form-line">
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">생산제품</label>
-                                    <select name="category" class="form-line">
-                                        <option value="">생산제품을 선택해 주세요</option>
-                                        <option value="">제품1</option>
-                                        <option value="">제품2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">공장리스트 선택</label>
-                                    <select name="category" class="form-line">
-                                        <option value="">공정리스트를 선택해 주세요</option>
-                                        <option value="">공정1</option>
-                                        <option value="">공정2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="eventName">공정시작일</label>
-                                    <input id="flatpickrSample02"
-                                           type="hidden"
-                                           class="form-control flatpickr-input"
-                                           data-toggle="flatpickr"
-                                           data-flatpickr-mode="range"
-                                           value="today">
-                                </div>
-                                <div class="form-group mb-32pt">
-                                    <label class="form-label mb-0 text-50 essential" for="">거래처</label>
-                                    <select name="category" class="form-line">
-                                        <option value="">거래처를 선택해 주세요</option>
-                                        <option value="">거래처1</option>
-                                        <option value="">거래처2</option>
-                                    </select>
-                                </div>
-                                <div class="my-32pt">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <a href="#n" class="btn btn-outline-secondary mr-8pt">취소하기</a>
-                                        <a href="completion.html" class="btn btn-accent">등록하기</a>
-                                    </div>
+                            </div>
+                            <div class="list-wide-cover">
+                                <div class="mb-4">
+                                    <ul class="sidebar-menu">
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_info">
+                                                <p class="m-0 els">공장1</p>
+                                                <span class="sidebar-menu-toggle-icon ml-auto"></span>
+                                            </a>
+                                            <div class="sidebar-submenu collapse sm-indent" id="workers_info">
+                                                <div class="cover">
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">공장명</span>
+                                                        <p class="m-0">공장1</p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">메모</span>
+                                                        <p class="m-0">공장 메모</p>
+                                                    </div>
+                                                    <div class="btn-cover mt-3">
+                                                        <a href="#n" class="btn">삭제</a>
+                                                        <a href="dist_pd_client_write.html" class="btn">수정</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_info2">
+                                                <p class="m-0 els">공장2</p>
+                                                <span class="sidebar-menu-toggle-icon ml-auto"></span>
+                                            </a>
+                                            <div class="sidebar-submenu collapse sm-indent" id="workers_info2">
+                                                <div class="cover">
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">공장명</span>
+                                                        <p class="m-0">공장2</p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">메모</span>
+                                                        <p class="m-0">공장 메모</p>
+                                                    </div>
+                                                    <div class="btn-cover mt-3">
+                                                        <a href="#n" class="btn">삭제</a>
+                                                        <a href="dist_pd_client_write.html" class="btn">수정</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

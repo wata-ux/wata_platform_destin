@@ -1,0 +1,136 @@
+@@include('./include/platform-header.html')
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="1365px">
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-topbar.html')
+    </div>
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
+            @@include('./include/platform-side-menu.html')
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dp-process">
+                        <div class="distribution-inner">
+                            <div class="container-fluid py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <a href="st_measuring_landing.html" class="circle-pin pr-2"><i
+                                            class="material-icons">arrow_back</i></a>
+                                    <div class="mr-24pt">
+                                        <h3 class="mb-0">제품 관리</h3>
+                                    </div>
+                                    <a href="st_client_write.html" class="btn btn-outline-dark ml-auto">모델 추가</a>
+                                </div>
+                            </div>
+                            <div class="list-opt-box">
+                                <div class="cell serach-box">
+                                    <input type="text" placeholder="검색어를 입력해주세요.">
+                                    <a href="#n" class="btn btn-secondary btn-sm ml-auto">검색</a>
+                                </div>
+                            </div>
+                            <div class="list-wide-cover">
+                                <div class="mb-4">
+                                    <ul class="sidebar-menu">
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_info">
+                                                <p class="m-0 els">제품1</p>
+                                                <span class="sidebar-menu-toggle-icon ml-auto"></span>
+                                            </a>
+                                            <div class="sidebar-submenu collapse sm-indent" id="workers_info">
+                                                <div class="cover">
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">제품군</span>
+                                                        <p class="m-0">제품군</p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">제품명</span>
+                                                        <p class="m-0">제품명</p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">제품 이미지</span>
+                                                        <div class="mt-2">
+                                                            <img src="images/icon/wata_symbol.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="btn-cover mt-3">
+                                                        <a href="#n" class="btn">삭제</a>
+                                                        <a href="dist_pd_client_write.html" class="btn">수정</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="sidebar-menu-item">
+                                            <a class="sidebar-menu-button" data-toggle="collapse" href="#workers_info2">
+                                                <p class="m-0 els">제품2</p>
+                                                <span class="sidebar-menu-toggle-icon ml-auto"></span>
+                                            </a>
+                                            <div class="sidebar-submenu collapse sm-indent" id="workers_info2">
+                                                <div class="cover">
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">공장명</span>
+                                                        <p class="m-0">공장2</p>
+                                                    </div>
+                                                    <div class="col-12 p-2">
+                                                        <span class="text-50">메모</span>
+                                                        <p class="m-0">공장 메모</p>
+                                                    </div>
+                                                    <div class="btn-cover mt-3">
+                                                        <a href="#n" class="btn">삭제</a>
+                                                        <a href="dist_pd_client_write.html" class="btn">수정</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dp-setting">
+                        <!-- 프로젝트 등록 -->
+                        <div class="distribution-inner">
+                            <div class="container-fluid d-flex flex-md-row align-items-center py-4">
+                                <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
+                                    <div class="mb-24pt mb-sm-0 mr-sm-24pt">
+                                        <h3 class="mb-0">설정</h3>
+                                        <p class="text-70 mb-0">설정 페이지입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <ul class="info-panel accident-panel info-link">
+                                    <li>
+                                        <a href="#n">
+                                            <p>제품관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">content_paste_search</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <p>창고관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">house_siding</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <p>거래처 관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons-outlined">person_search</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@@include('./include/platform-footer.html')
