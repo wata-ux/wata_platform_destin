@@ -96,11 +96,12 @@
     </div> -->
 
 
-<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
-    <div class="navbar navbar-expand navbar-light" id="default-navbar" data-primary>
-    <button class="navbar-toggler w-auto mr-16pt d-block d-xxl-none rounded-0" type="button"
-        data-toggle="sidebar">
-        <span class="material-icons">short_text</span>
+<div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="1365px">
+    <div class="mdk-drawer-layout__content page-content">
+        <!-- Header -->
+<div class="navbar navbar-expand navbar-light" id="default-navbar" data-primary>
+    <button class="navbar-toggler w-auto mr-16pt d-block d-xxl-none rounded-0" type="button" data-toggle="sidebar">
+        <span class="material-icons text-iden">menu</span>
     </button>
     <div id="filter-bar">
         <a href="#0" class="cd-filter-trigger"><i class="material-icons">tune</i>필터</a>
@@ -214,8 +215,7 @@
                         <div class="dropdown-body my-2">
                             <div class="flex" style="max-width: 100%">
                                 <input id="userAge" type="text" data-toggle="ion-rangeslider" data-min="0"
-                                    data-max="100" data-from="20" data-to="50" data-type="double"
-                                    data-grid="true">
+                                    data-max="100" data-from="20" data-to="50" data-type="double" data-grid="true">
                             </div>
                         </div>
                     </div>
@@ -232,13 +232,13 @@
                                 <label class="custom-control-label" for="navBarGenderAll">전체</label>
                             </div>
                             <div class="form-check custom-checkbox mt-12pt">
-                                <input class="custom-control-input" type="radio" name="navBarGenderVal"
-                                    value="1" id="navBarGenderMale">
+                                <input class="custom-control-input" type="radio" name="navBarGenderVal" value="1"
+                                    id="navBarGenderMale">
                                 <label class="custom-control-label" for="navBarGenderMale">남</label>
                             </div>
                             <div class="form-check custom-checkbox mt-12pt">
-                                <input class="custom-control-input" type="radio" name="navBarGenderVal"
-                                    value="2" id="navBarGenderFeMale">
+                                <input class="custom-control-input" type="radio" name="navBarGenderVal" value="2"
+                                    id="navBarGenderFeMale">
                                 <label class="custom-control-label" for="navBarGenderFeMale">여</label>
                             </div>
                         </div>
@@ -251,19 +251,19 @@
                     <div class="filter-item-dropdown">
                         <div class="dropdown-body my-2">
                             <div class="form-check custom-checkbox">
-                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
-                                    value="" id="deviceTypeAll" checked>
+                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value=""
+                                    id="deviceTypeAll" checked>
                                 <label class="custom-control-label" for="deviceTypeAll">전체</label>
                             </div>
 
                             <div class="form-check custom-checkbox mt-12pt">
-                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
-                                    value="1" id="deviceTypeAos">
+                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="1"
+                                    id="deviceTypeAos">
                                 <label class="custom-control-label" for="deviceTypeAos">Android</label>
                             </div>
                             <div class="form-check custom-checkbox mt-12pt">
-                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
-                                    value="2" id="deviceTypeIos">
+                                <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal" value="2"
+                                    id="deviceTypeIos">
                                 <label class="custom-control-label" for="deviceTypeIos">iOS</label>
                             </div>
                         </div>
@@ -277,8 +277,7 @@
                         <div class="dropdown-body my-2">
                             <div class="flex" style="max-width: 100%">
                                 <input id="userStay" type="text" data-toggle="ion-rangeslider" data-min="0"
-                                    data-max="100" data-from="20" data-to="50" data-type="double"
-                                    data-grid="true">
+                                    data-max="100" data-from="20" data-to="50" data-type="double" data-grid="true">
                             </div>
                         </div>
                     </div>
@@ -289,10 +288,9 @@
                 </div>
             </div>
             <div class="tabBox mapStauts02 status-con active">
-                <span class="d-flex align-items-center mr-4 pl-3">
+                <span class="d-flex align-items-center mr-4">
                     <span class="avatar mr-12pt">
-                        <span class="avatar-title navbar-avatar"><i
-                                class="material-icons">all_inclusive</i></span>
+                        <span class="avatar-title navbar-avatar"><i class="material-icons">all_inclusive</i></span>
                     </span>
                     <small class="flex d-flex flex-column">
                         <span class="navbar-text-50">검사대기</span>
@@ -301,8 +299,7 @@
                 </span>
                 <span class="d-flex align-items-center mr-4">
                     <span class="avatar mr-12pt">
-                        <span class="avatar-title navbar-avatar"><i
-                                class="material-icons-outlined">fact_check</i></span>
+                        <span class="avatar-title navbar-avatar"><i class="material-icons-outlined">fact_check</i></span>
                     </span>
                     <small class="flex d-flex flex-column">
                         <span class="navbar-text-50">검사완료</span>
@@ -311,8 +308,7 @@
                 </span>
                 <span class="d-flex align-items-center mr-4">
                     <span class="avatar mr-12pt">
-                        <span class="avatar-title navbar-avatar"><i
-                                class="material-icons-outlined">check_circle_outline</i></span>
+                        <span class="avatar-title navbar-avatar"><i class="material-icons-outlined">check_circle_outline</i></span>
                     </span>
                     <small class="flex d-flex flex-column">
                         <span class="navbar-text-50">적합제품</span>
@@ -321,8 +317,7 @@
                 </span>
                 <span class="d-flex align-items-center mr-4">
                     <span class="avatar mr-12pt">
-                        <span class="avatar-title navbar-avatar"><i
-                                class="material-icons-outlined">unpublished</i></span>
+                        <span class="avatar-title navbar-avatar"><i class="material-icons-outlined">unpublished</i></span>
                     </span>
                     <small class="flex d-flex flex-column">
                         <span class="navbar-text-50">부적합제품</span>
@@ -340,8 +335,7 @@
             <span class="font-weight-bolder">주식회사 데스틴파워</span>
         </div>
         <div class="nav-item dropdown ml-4">
-            <a href="#" class="d-flex align-items-center dropdown-toggle" data-toggle="dropdown"
-                data-caret="false">
+            <a href="#" class="d-flex align-items-center dropdown-toggle" data-toggle="dropdown" data-caret="false">
                 <span class="avatar avatar-sm">
                     <span class="avatar-title rounded-circle">SH</span>
                 </span>
@@ -354,248 +348,116 @@
         </div>
     </div>
 </div>
-    <div class="mdk-drawer-layout__content page-content">
-            <!-- history / live -->
-    <div class="btn-mid-holder d-none">
-        <div role="group" id="status-map" class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-white">
-                <input type="radio" id="mapStauts01" name="mapStauts" aria-checked="true" checked=""> 히스토리
-            </label>
-            <label class="btn btn-white active">
-                <input type="radio" id="mapStauts02" name="mapStauts" aria-checked="true"> 실시간
-            </label>
-        </div>
-    </div>
-    <!-- mouse pointer -->
-    <div class="pointer-wrap">
-        <div class="mouse-point space-marker" style="left: 44%; top: 36%;">
-            <div class="marker-inner">
-                <div class="marker-icon"><span class="material-icons">location_on</span></div>
-                <div class="marker-name">destin power</div>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 52%; top: 48%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 50%; top: 46%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 49%; top: 44%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 48%; top: 47%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 48%; top: 42%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 38%; top: 49%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 37%; top: 52%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 38.5%; top: 51%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 37%; top: 55%;">
-            <div class="level-cover level-item01">
-                <span class="status">19&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 46%; top: 47%;">
-            <div class="level-cover level-item02">
-                <span class="status">25&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 51%; top: 47%;">
-            <div class="level-cover level-item03">
-                <span class="status">28&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 50.5%; top: 51%;">
-            <div class="level-cover level-item04">
-                <span class="status">32&deg;/30&deg;</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <!-- <div class="mouse-point flexible-poi" style="left: 66%; top: 55%;">
-            <div class="level-cover assets fluid">
-                <span class="poi-bg"></span>
-            </div>
-        </div>
-        <div class="mouse-point flexible-poi" style="left: 68%; top: 55%;">
-            <div class="level-cover assets">
-                <span class="poi-bg"></span>
-            </div>
-        </div> -->
-        <!-- <div class="mouse-point flexible-poi" style="left: 70%; top: 55%;">
-            <div class="level-cover assets poi-off">
-                <span class="status">T-999</span>
-                <span class="poi-bg"></span>
-            </div>
-        </div> -->
-    </div>
-    <!-- map zoom/out -->
-    <div class="btn-widget-holder">
-        <ul>
-            <li><button type="button" class="btn btn-white mb-3"><i class="fas fa-globe"></i></button></li>
-            <li><button type="button" class="btn btn-white mb-3"><i class="fas fa-crosshairs"></i></button></li>
-            <li>
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-white"><i class="fas fa-plus"></i></button>
-                    <button type="button" class="btn btn-white"><i class="fas fa-minus"></i></button>
+        <div class="page-cover">
+            <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+                <div class="flex title-row">
+                    <h3 class="d-flex align-items-center mb-0 ">체크리스트 양식 01</h3>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <div class="cd-panel__open">
-        <a href="#n" class="js-cd-panel-trigger" data-panel="main">
-            <span class="material-icons-outlined">query_stats</span>
-            <small>Chart</small>
-        </a>
-    </div>
-
-
-        <div class="sidebar-depth">
-            <div class="sidebar-depth-wrap">
-                <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
-                    <div class="flex title-row">
-                        <h3 class="d-flex align-items-center mb-0 ">체크리스트 양식 01</h3>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">더보기</a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a href="#n" class="dropdown-item text-primary">수정</a>
-                            <a href="#n" class="dropdown-item text-danger">삭제</a>
-                        </div>
+                <div class="btn-group">
+                    <a href="#n" class="btn btn-rounded btn-outline-dark dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">더보기</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#n" class="dropdown-item text-primary">수정</a>
+                        <a href="#n" class="dropdown-item text-danger">삭제</a>
                     </div>
                 </div>
-                <div class="contents-view">
-                    <div class="page-separator mt-5">
-                        <div class="page-separator__text">체크리스트</div>
-                    </div>
+            </div>
+            <div class="contents-view">
+                <div class="page-separator mt-5">
+                    <div class="page-separator__text">체크리스트</div>
+                </div>
 
 
-                    <div class="accordion js-accordion accordion--boxed list-group-flush list-bg-light mb-4">
-                        <div class="accordion__item open">
-                            <div class="d-flex align-items-center px-4 py-3">
-                                <span class="flex">
-                                    <input type="text" class="form-control font-size-16pt" value="조립 1공정(준비공정)">
-                                </span>
-                                <div class="mx-3">
-                                    <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                </div>
-                                <div class="media-right ml-auto">
-                                    <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                </div>
+                <div class="accordion js-accordion accordion--boxed list-group-flush list-bg-light mb-4">
+                    <div class="accordion__item open">
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <span class="flex">
+                                <input type="text" class="form-control font-size-16pt" value="조립 1공정(준비공정)">
+                            </span>
+                            <div class="mx-3">
+                                <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
                             </div>
-                            <div class="accordion__menu collapse show" data-toggle="dragula" data-dragula-containers='["#check-item01"]' data-dragula-moves="js-dragula-handle">
-                                <div id="check-item01" class="list-group list-group-flush border-top-1">
-                                    <div class="list-group-item d-flex">
-                                        <span class="flex">
-                                            <input type="text" class="form-control font-size-16pt" value="Production check sheet 및 S/N 확인">
-                                        </span>
-                                        <div class="mx-3">
-                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                        </div>
-                                        <div class="ml-auto">
-                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                        </div>
-                                    </div>
-                                    <div class="list-group-item d-flex">
-                                        <span class="flex">
-                                            <input type="text" class="form-control font-size-16pt" value="생산출고자재 품목/수량 출고전표와 일치">
-                                        </span>
-                                        <div class="mx-3">
-                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                        </div>
-                                        <div class="media-right ml-auto">
-                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                        </div>
-                                    </div>
-                                    <div class="list-group-item d-flex">
-                                        <span class="flex">
-                                            <input type="text" class="form-control font-size-16pt" value="작업표준에 따른 라벨 부착 확인">
-                                        </span>
-                                        <div class="mx-3">
-                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                        </div>
-                                        <div class="media-right ml-auto">
-                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                        </div>
-                                    </div>
-                                    <div class="list-group-item d-flex">
-                                        <span class="flex">
-                                            <input type="text" class="form-control font-size-16pt" value="덕트 및 딘레일 절단 치수 확인">
-                                        </span>
-                                        <div class="mx-3">
-                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                        </div>
-                                        <div class="media-right ml-auto">
-                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                        </div>
-                                    </div>
-                                    <div class="list-group-item d-flex">
-                                        <span class="flex">
-                                            <input type="text" class="form-control font-size-16pt" value="공정별 자재 투입 확인">
-                                        </span>
-                                        <div class="mx-3">
-                                            <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
-                                        </div>
-                                        <div class="media-right ml-auto">
-                                            <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center border-top-1 p-3">
-                                    <a href="#n" class="btn text-danger"><i class="material-icons">add</i>항목 추가</a>
-                                </div>
+                            <div class="media-right ml-auto">
+                                <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center p-3">
-                            <a href="#n" class="btn btn-sm btn-rounded btn-accent"><i class="material-icons">add</i>공정 추가</a>
+                        <div class="accordion__menu collapse show" data-toggle="dragula" data-dragula-containers='["#check-item01"]' data-dragula-moves="js-dragula-handle">
+                            <div id="check-item01" class="list-group list-group-flush border-top-1">
+                                <div class="list-group-item d-flex">
+                                    <span class="flex">
+                                        <input type="text" class="form-control font-size-16pt" value="Production check sheet 및 S/N 확인">
+                                    </span>
+                                    <div class="mx-3">
+                                        <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                    </div>
+                                    <div class="ml-auto">
+                                        <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex">
+                                    <span class="flex">
+                                        <input type="text" class="form-control font-size-16pt" value="생산출고자재 품목/수량 출고전표와 일치">
+                                    </span>
+                                    <div class="mx-3">
+                                        <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                    </div>
+                                    <div class="media-right ml-auto">
+                                        <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex">
+                                    <span class="flex">
+                                        <input type="text" class="form-control font-size-16pt" value="작업표준에 따른 라벨 부착 확인">
+                                    </span>
+                                    <div class="mx-3">
+                                        <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                    </div>
+                                    <div class="media-right ml-auto">
+                                        <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex">
+                                    <span class="flex">
+                                        <input type="text" class="form-control font-size-16pt" value="덕트 및 딘레일 절단 치수 확인">
+                                    </span>
+                                    <div class="mx-3">
+                                        <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                    </div>
+                                    <div class="media-right ml-auto">
+                                        <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                    </div>
+                                </div>
+                                <div class="list-group-item d-flex">
+                                    <span class="flex">
+                                        <input type="text" class="form-control font-size-16pt" value="공정별 자재 투입 확인">
+                                    </span>
+                                    <div class="mx-3">
+                                        <a href="#n" class="btn-list-close"><span class="material-icons">close</span></a>
+                                    </div>
+                                    <div class="media-right ml-auto">
+                                        <span class="js-dragula-handle material-icons" style="cursor: move;">drag_handle</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center border-top-1 p-3">
+                                <a href="#n" class="btn text-danger"><i class="material-icons">add</i>항목 추가</a>
+                            </div>
                         </div>
                     </div>
-                    
                     <div class="d-flex justify-content-center p-3">
-                        <a href="#n" class="btn btn-rounded btn-secondary mx-1">취소하기</a>
-                        <a href="#n" class="btn btn-rounded btn-dark mx-1">적용하기</a>
+                        <a href="#n" class="btn btn-sm btn-rounded btn-accent"><i class="material-icons">add</i>공정 추가</a>
                     </div>
+                </div>
+                
+                <div class="d-flex justify-content-center p-3">
+                    <a href="#n" class="btn btn-rounded btn-secondary mx-1">취소하기</a>
+                    <a href="#n" class="btn btn-rounded btn-dark mx-1">적용하기</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
-        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
             <div class="sidebar sidebar-mini sidebar-left d-flex flex-column">
     <!-- Brand -->
     <a href="home.html" class="sidebar-brand p-0 navbar-height d-flex justify-content-center" data-toggle="tooltip"

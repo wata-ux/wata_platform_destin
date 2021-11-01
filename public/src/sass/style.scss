@@ -2013,8 +2013,8 @@ platform map
         padding: 0 1.5rem;
         margin-left: 0;
         background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         height: 64px;
+        border-bottom: 1px solid $border-color;
         .navbar-nav {
             li {
                 margin-left: 0;
@@ -2059,6 +2059,7 @@ platform map
         background-color: #fff;
         width: 400px;
         border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
         .tab-content{
             height: 100%;
         }
@@ -2085,11 +2086,17 @@ platform map
     }
     .list-group{
         // cursor: pointer;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
         .list-group-item{
             &:hover{
                 a.card-title{
                     text-decoration: underline;
                 }
+            }
+            &.active{
+                background-color: #f8f9fa;
+                border-color: $border-color;
             }
         }
     }
@@ -3572,13 +3579,42 @@ a.btn-add-cat{
         .accordion__menu{
             background-color: #fbfbfb;
         }
+        .list-group{
+            border-bottom: none;
+        }
         .list-group-item{
             background-color: transparent;
-            padding: 1rem 2.5rem;
+            padding: 0 2.5rem;
             .custom-control{
                 label{
                     font-size: 1rem;
                 }
+            }
+        }
+        .duration-record-holder{
+            display: flex;
+            .cell{
+                display: flex;
+                align-items: center;
+                padding: 0 1rem;
+            }
+        }
+        .duration-time-holder{
+            display: flex;
+            align-items: center;
+            padding: .75rem 1.5rem;
+            margin: 0 1rem;
+            &.state-comp{
+                background-color: var(--teal);
+            }
+            &.state-play{
+                background-color: var--blue);
+            }
+            &.state-standby{
+                background-color: var(--gray);
+            }
+            strong{
+                color: #fff;
             }
         }
     }
@@ -4335,13 +4371,13 @@ a.btn-add-cat{
     left: 0;
     top: 64px;
     width: 100%;
-    border-top: 1px solid $border-color;
     background-color: #fff;
     margin: 0;
-    padding: 0 3rem 0 1.5rem;
+    border-bottom: 1px solid $border-color;
     .status-con{
-        height: 64px;
+        height: 63px;
         display: none;
+        padding: 0 1rem;
         &.active{
             display: flex;
         }
@@ -5805,7 +5841,6 @@ a.cd-filter-trigger {
     }
 }
 .list-opt-box{
-    border-top: 1px solid $border-color;
     .cell{
         border-top: 1px solid $border-color;
         &:first-of-type{

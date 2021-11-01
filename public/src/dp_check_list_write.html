@@ -1,16 +1,11 @@
 @@include('./include/platform-header.html')
 
-<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
-    @@include('./include/platform-topbar.html')
+<div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="1365px">
     <div class="mdk-drawer-layout__content page-content">
-        @@include('./include/platform-tools.html')
-        <div class="sidebar-depth">
-            <div class="sidebar-depth-wrap">
-            </div>
-        </div>
+        @@include('./include/platform-topbar.html')
     </div>
-    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
-        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
             @@include('./include/platform-side-menu.html')
             <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
                 <div class="tab-content">
@@ -18,7 +13,7 @@
                         <div class="distribution-inner">
                             <div class="container-fluid d-flex align-items-center py-4">
                                 <div class="flex d-flex align-items-center">
-                                    <a href="dp_check_list.html" class="pr-2"><i class="material-icons">arrow_back</i></a>
+                                    <a href="dp_check_list_manage.html" class="pr-2"><i class="material-icons">arrow_back</i></a>
                                     <div class="mr-24pt">
                                         <h3 class="mb-0">공정 체크리스트 관리</h3>
                                     </div>
@@ -68,7 +63,7 @@
                                 </div>
                                 <div class="my-32pt">
                                     <div class="d-flex align-items-center justify-content-center">
-                                        <a href="#n" class="btn btn-outline-secondary mr-8pt">취소하기</a>
+                                        <a href="dp_check_list_manage.html" class="btn btn-outline-secondary mr-8pt">취소하기</a>
                                         <a href="dp_check_list_manage.html" class="btn btn-outline-accent ml-0">추가하기</a>
                                     </div>
                                 </div>
