@@ -4,7 +4,7 @@
     @@include('./include/platform-topbar.html')
     <div class="mdk-drawer-layout__content page-content">
         @@include('./include/platform-tools.html')
-        <div class="sidebar-depth sidebar-wide">
+        <div class="sidebar-depth">
             <div class="sidebar-depth-wrap">
                 <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
                     <div class="flex title-row">
@@ -265,11 +265,11 @@
         </div>
     </div>
     <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
-        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact">
+        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact" data-opened>
             @@include('./include/platform-side-menu.html')
-            <div class="sidebar sidebar-left flex sidebar-secondary">
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
                 <div class="tab-content">
-                    <div class="tab-pane" id="dp-process">
+                    <div class="tab-pane active" id="dp-process">
                         <div class="distribution-inner">
                             <div class="container-fluid py-4">
                                 <div class="flex d-flex align-items-center">

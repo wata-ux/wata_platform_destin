@@ -35,6 +35,9 @@ input::placeholder, textarea::placeholder{
 .bg-gray-v4 {
     background-color: #f2f2f2;
 }
+.bg-identity{
+    background-color: $identity ;
+}
 .form-group {
     position: relative;
     label, span {
@@ -268,7 +271,7 @@ input::placeholder, textarea::placeholder{
     }
 }
 .resp-cover{
-    @media only screen and (max-width: 1440px){
+    @media only screen and (max-width: 1366px){
         display: block;
         width: 100%;
         white-space: nowrap;
@@ -301,9 +304,6 @@ input::placeholder, textarea::placeholder{
 }
 .layout-sticky-subnav a.navbar-brand .img-fluid {
     max-width: 100px;
-}
-.mdk-drawer-layout .mdk-drawer {
-    position: fixed;
 }
 .application-shell-content {
     height: 2000px;
@@ -2005,7 +2005,7 @@ platform map
 
 -------------------------------- */
 /* global */
-.layout-compact {
+.layout-mini-secondary {
     .navbar {
         position: fixed;
         z-index: 2;
@@ -2056,8 +2056,6 @@ platform map
         }
     }
     .sidebar-secondary {
-        height: calc(100% - 64px);
-        margin-top: 64px;
         background-color: #fff;
         width: 400px;
         border-left: 1px solid $border-color;
@@ -2915,6 +2913,21 @@ em.none-list{
         filter: grayscale(100);
         opacity: 0.5;
         pointer-events: none;
+    }
+}
+@media (max-width:1366px){
+    .sidebar-depth-wrap.responsive-item{
+        .tab-cover{
+            flex-direction: column;
+            align-items: flex-start !important;
+            .tab-menu{
+                order: 2;
+            }
+            .sort-cover{
+                order: 1;
+                margin-bottom: 2rem;
+            }
+        }
     }
 }
 .map-thumb{
@@ -4410,7 +4423,7 @@ a.btn-add-cat{
         color: #e64746;
     }
 }
-@media only screen and (min-width: 1441px){
+@media only screen and (min-width: 1366px){
     .status-map{
         display: block;
         border: none;
@@ -4920,7 +4933,7 @@ a.cd-filter-trigger {
     -o-transform: rotate(225deg);
     transform: rotate(225deg);
 }
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1366px) {
     a.cd-filter-trigger {
         /* the the menu triger is hidden by default on desktop devices */
         display: none;
@@ -9941,6 +9954,10 @@ xnugget info
         border: 1px solid rgba(0, 0, 0, 0.3);
         border-radius: 50%;
     }
+}
+
+.page-cover{
+    padding: 7rem 3rem; 
 }
 
 

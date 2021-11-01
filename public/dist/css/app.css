@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+    --identity: #E83B3B;
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -30916,7 +30917,7 @@ body {
 .layout-mini-secondary .mdk-drawer[data-persistent].layout-mini-secondary__drawer,
 .layout-mini .layout-mini-secondary__drawer .mdk-drawer__content,
 .layout-mini .mdk-drawer[data-persistent].layout-mini-secondary__drawer {
-    width: 320px
+    width: 464px
 }
 
 .layout-mini-secondary .sidebar-mini,
@@ -30986,7 +30987,7 @@ body {
 
 .layout-mini-secondary .sidebar-secondary,
 .layout-mini .sidebar-secondary {
-    width: 256px;
+    width: 400px;
     position: absolute;
     top: 0;
     left: 64px

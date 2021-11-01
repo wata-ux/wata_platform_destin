@@ -1,212 +1,271 @@
 @@include('./include/platform-header.html')
 
-<div class="mdk-drawer-layout js-mdk-drawer-layout float-contents">
-    @@include('./include/platform-topbar.html')
+<div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="1365px">
     <div class="mdk-drawer-layout__content page-content">
-        @@include('./include/platform-tools.html')
-        <div class="cd-panel cd-panel--from-right js-cd-panel-main cd-panel--is-visible">
-            <a href="#0" class="cd-panel__close js-cd-close">Close</a>
-            <!-- open btn -->
-            <!-- <a href="#0" class="cd-panel__show js-cd-panel-trigger" data-panel="main">Close</a> -->
-            <div class="cd-panel__container">
-                <div class="cd-panel__content p-4">
-                    <div class="d-flex flex-row align-items-center mb-0 pb-4">
-                        <div class="flex">
-                            <h3 class="d-flex align-items-center mb-0">실시간 모니터링</h3>
-                            <p class="text-50 m-0">2021-07-01 13:00:00 기준</p>
-                        </div>
-                        <div class="flatpickr-wrapper d-none">
-                            <div id="recent_orders_date" data-toggle="flatpickr" data-flatpickr-wrap="true"
-                                data-flatpickr-mode="range" data-flatpickr-alt-format="d/m/Y"
-                                data-flatpickr-date-format="d/m/Y">
-                                <a href="javascript:void(0)" class="d-flex" data-toggle>
-                                    <span class="material-icons-outlined">edit_calendar</span>
-                                </a>
-                                <input class="flatpickr-hidden-input" type="hidden" value="01/01/2021 to 31/12/2021"
-                                    data-input>
+        <div class="navbar navbar-expand navbar-light" id="default-navbar" data-primary>
+            <button class="navbar-toggler w-auto mr-16pt d-block d-xxl-none rounded-0" type="button"
+                data-toggle="sidebar">
+                <span class="material-icons">short_text</span>
+            </button>
+            <div id="filter-bar">
+                <a href="#0" class="cd-filter-trigger"><i class="material-icons">tune</i>필터</a>
+                <div class="status-map align-items-center justify-content-center">
+                    <div class="tabBox mapStauts01 status-con">
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong><span>기간</span> 2021.04.05~2021.04.31</strong>
+                            </a>
+                            <div class="filter-item-dropdown date-pick" style="width: 350px;">
+                                <div class="dropdown-body pt-8pt">
+                                    <div class="form-group">
+                                        <input type="hidden" data-toggle="flatpickr" data-flatpickr-mode="range"
+                                            data-flatpickr-inline="true" value="2021-01-01 to 2021-01-31">
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-2">
+                                    <a href="#n" class="btn btn-outline-secondary">확인</a>
+                                </div>
                             </div>
+                        </div>
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong>시간선택</strong>
+                            </a>
+                            <div class="filter-item-dropdown" style="width: 250px;">
+                                <div class="dropdown-header"><strong>시작시간</strong></div>
+                                <div class="dropdown-body mb-4">
+                                    <div class="form-row">
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">AM</option>
+                                                <option value="">PM</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">00</option>
+                                                <option value="">10</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">40</option>
+                                                <option value="">50</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-header"><strong>종료시간</strong></div>
+                                <div class="dropdown-body mb-4">
+                                    <div class="form-row">
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">AM</option>
+                                                <option value="">PM</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <select class="form-line" name="" id="">
+                                                <option value="">00</option>
+                                                <option value="">10</option>
+                                                <option value="">20</option>
+                                                <option value="">30</option>
+                                                <option value="">40</option>
+                                                <option value="">50</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mb-2">
+                                    <a href="#n" class="btn btn-outline-secondary">확인</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong>연령대</strong>
+                            </a>
+                            <div class="filter-item-dropdown" style="width: 300px;">
+                                <div class="dropdown-body my-2">
+                                    <div class="flex" style="max-width: 100%">
+                                        <input id="userAge" type="text" data-toggle="ion-rangeslider" data-min="0"
+                                            data-max="100" data-from="20" data-to="50" data-type="double"
+                                            data-grid="true">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong>성별</strong>
+                            </a>
+                            <div class="filter-item-dropdown">
+                                <div class="dropdown-body my-2">
+                                    <div class="form-check custom-checkbox">
+                                        <input class="custom-control-input" type="radio" name="navBarGenderVal" value=""
+                                            id="navBarGenderAll" checked>
+                                        <label class="custom-control-label" for="navBarGenderAll">전체</label>
+                                    </div>
+                                    <div class="form-check custom-checkbox mt-12pt">
+                                        <input class="custom-control-input" type="radio" name="navBarGenderVal"
+                                            value="1" id="navBarGenderMale">
+                                        <label class="custom-control-label" for="navBarGenderMale">남</label>
+                                    </div>
+                                    <div class="form-check custom-checkbox mt-12pt">
+                                        <input class="custom-control-input" type="radio" name="navBarGenderVal"
+                                            value="2" id="navBarGenderFeMale">
+                                        <label class="custom-control-label" for="navBarGenderFeMale">여</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong>휴대폰 종류</strong>
+                            </a>
+                            <div class="filter-item-dropdown">
+                                <div class="dropdown-body my-2">
+                                    <div class="form-check custom-checkbox">
+                                        <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
+                                            value="" id="deviceTypeAll" checked>
+                                        <label class="custom-control-label" for="deviceTypeAll">전체</label>
+                                    </div>
+
+                                    <div class="form-check custom-checkbox mt-12pt">
+                                        <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
+                                            value="1" id="deviceTypeAos">
+                                        <label class="custom-control-label" for="deviceTypeAos">Android</label>
+                                    </div>
+                                    <div class="form-check custom-checkbox mt-12pt">
+                                        <input class="custom-control-input" type="radio" name="navBarDeviceTypeVal"
+                                            value="2" id="deviceTypeIos">
+                                        <label class="custom-control-label" for="deviceTypeIos">iOS</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-cell filter-list d-flex align-items-center">
+                            <a href="javascript:void(0)" class="filter-dropdown-toggle filter-select">
+                                <strong>체류시간(m)</strong>
+                            </a>
+                            <div class="filter-item-dropdown" style="width: 300px;">
+                                <div class="dropdown-body my-2">
+                                    <div class="flex" style="max-width: 100%">
+                                        <input id="userStay" type="text" data-toggle="ion-rangeslider" data-min="0"
+                                            data-max="100" data-from="20" data-to="50" data-type="double"
+                                            data-grid="true">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-btn-cell d-flex flex justify-content-end align-items-center">
+                            <a href="#n" class=""><i class="material-icons mr-1">done</i> 설정</a>
+                            <a href="#n" class="is-loading is-loading-sm">Button</a>
                         </div>
                     </div>
-                    <div class="accordion js-accordion accordion--boxed list-group-flush" id="parent">
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel01" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">watch_later</span> -->
-                                    현재 재고 및 내역
-                                </span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse show" id="panel01">
-                                <div class="accordion__menu-link align-items-center">
-                                    <em class="flex text-dark font-size-24pt">2,354</em>
-                                    <div class="visitor-group">
-                                        <ul class="mb-0">
-                                            <li>입고<span class="text-accent">100</span></li>
-                                            <li>출고<span class="text-primary">400</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-start">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    대기</h6>
-                                                <div class="text-els">제주한라봉&딸기 마카롱 쿠키 듀오(특대/15개입)</div>
-                                                <ul class="mb-2">
-                                                    <li>2021-08-23 15:29:04</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                                <span class="writer">leo jeong</span>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+5</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <div class="panel-list">
-                                        <a href="dist_pd_history.html" class="d-flex align-items-start">
-                                            <!-- <div class="d-flex">
-                                                <i class="material-icons text-30">archive</i>
-                                            </div> -->
-                                            <div class="mr-3">
-                                                <h6><span
-                                                        class="material-icons font-size-16pt icon--left">arrow_downward</span>입고
-                                                    완료</h6>
-                                                <div class="text-els">제주 한라봉 수제 쿠키(16개입)</div>
-                                                <ul class="mb-2">
-                                                    <li>2021-08-23 15:29:04</li>
-                                                    <li>창고1</li>
-                                                </ul>
-                                                <span class="writer">leo jeong</span>
-                                            </div>
-                                            <div class="quantity">
-                                                <h6>+100</h6>
-                                                <div class="d-flex align-items-center">
-                                                    <div>15</div>
-                                                    <span
-                                                        class="material-icons font-size-16pt text-30">chevron_right</span>
-                                                    <div>100</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel04" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">emoji_events</span> -->
-                                    창고 환경 모니터링</span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse more-cover ac-item02 show" id="panel04">
-                                <div class="inner">
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고1</p>
-                                            <span class="d-flex badge badge-accent ml-auto">이상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고2</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고3</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고4</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고5</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                    <div class="accordion__menu-link">
-                                        <a href="#n" class="d-flex align-items-center w-100">
-                                            <p class="d-flex m-0">창고6</p>
-                                            <span class="d-flex badge badge-success ml-auto">정상</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center more-btn-cover">
-                                    <button type="button" class="btn btn-link text-secondary btn-more"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion__item open">
-                            <a href="#" class="accordion__toggle collapsed" data-toggle="collapse"
-                                data-target="#panel02" data-parent="#parent">
-                                <span class="flex d-flex align-items-center">
-                                    <!-- <span class="material-icons-outlined icon--left">flag</span> -->
-                                    알림
-                                </span>
-                                <span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span>
-                            </a>
-                            <div class="accordion__menu collapse show" id="panel02">
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고1] 입고 대기</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고2] 입고 완료</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                                <div class="accordion__menu-link state-up">
-                                    <a href="#n" class="d-flex align-items-center flex-row w-100">
-                                        <span
-                                            class="material-icons-outlined text-accent mr-1 font-size-16pt">info</span>
-                                        <p class="d-flex m-0 text-accent pr-4">[창고3] 출고 완료</p>
-                                        <span class="d-flex text-50 ml-auto">2021.07.05</span>
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="tabBox mapStauts02 status-con active">
+                        <span class="d-flex align-items-center mr-4 pl-3">
+                            <span class="avatar mr-12pt">
+                                <span class="avatar-title navbar-avatar"><i
+                                        class="material-icons">all_inclusive</i></span>
+                            </span>
+                            <small class="flex d-flex flex-column">
+                                <span class="navbar-text-50">검사대기</span>
+                                <strong class="navbar-text-100">3건</strong>
+                            </small>
+                        </span>
+                        <span class="d-flex align-items-center mr-4">
+                            <span class="avatar mr-12pt">
+                                <span class="avatar-title navbar-avatar"><i
+                                        class="material-icons-outlined">fact_check</i></span>
+                            </span>
+                            <small class="flex d-flex flex-column">
+                                <span class="navbar-text-50">검사완료</span>
+                                <strong class="navbar-text-100">3건</strong>
+                            </small>
+                        </span>
+                        <span class="d-flex align-items-center mr-4">
+                            <span class="avatar mr-12pt">
+                                <span class="avatar-title navbar-avatar"><i
+                                        class="material-icons-outlined">check_circle_outline</i></span>
+                            </span>
+                            <small class="flex d-flex flex-column">
+                                <span class="navbar-text-50">적합제품</span>
+                                <strong class="navbar-text-100">2건</strong>
+                            </small>
+                        </span>
+                        <span class="d-flex align-items-center mr-4">
+                            <span class="avatar mr-12pt">
+                                <span class="avatar-title navbar-avatar"><i
+                                        class="material-icons-outlined">unpublished</i></span>
+                            </span>
+                            <small class="flex d-flex flex-column">
+                                <span class="navbar-text-50">부적합제품</span>
+                                <strong class="navbar-text-100">1건</strong>
+                            </small>
+                        </span>
+                        <div class="filter-btn-cell d-flex flex justify-content-end align-items-center">
+                            <a href="#n" class=""><i class="material-icons mr-1">autorenew</i> 새로고침</a>
                         </div>
                     </div>
-                </div> <!-- cd-panel__content -->
+                </div>
             </div>
-        </div> 
+            <div class="d-flex flex justify-content-end align-items-center">
+                <div class="d-flex ml-4">
+                    <span class="font-weight-bolder">주식회사 데스틴파워</span>
+                </div>
+                <div class="nav-item dropdown ml-4">
+                    <a href="#" class="d-flex align-items-center dropdown-toggle" data-toggle="dropdown"
+                        data-caret="false">
+                        <span class="avatar avatar-sm">
+                            <span class="avatar-title rounded-circle">SH</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header"><strong>계정메뉴</strong></div>
+                        <a class="dropdown-item" href="my_account.html">정보수정</a>
+                        <a class="dropdown-item" href="login.html">로그아웃</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="mdk-drawer js-mdk-drawer layout-compact__drawer" id="default-drawer">
-        <div class="mdk-drawer__content js-sidebar-mini" data-layout="compact">
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
             @@include('./include/platform-side-menu.html')
-            <div class="sidebar sidebar-left flex sidebar-secondary">
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
                 <div class="tab-content">
-                    <div class="tab-pane" id="dp-process">
-                        <!-- 프로젝트 등록 -->
+                    <div class="tab-pane active" id="dp-process">
                         <div class="distribution-inner">
                             <div class="container-fluid d-flex flex-md-row align-items-center py-4">
                                 <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
@@ -255,7 +314,6 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="dp-setting">
-                        <!-- 프로젝트 등록 -->
                         <div class="distribution-inner">
                             <div class="container-fluid d-flex flex-md-row align-items-center py-4">
                                 <div class="flex d-flex flex-column flex-sm-row align-items-center mb-24pt mb-md-0">
