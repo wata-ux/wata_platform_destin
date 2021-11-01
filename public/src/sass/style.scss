@@ -2279,12 +2279,10 @@ platform map
     box-shadow: inset 0 .1rem .1rem rgba(39, 44, 51, .03) !important;
     .progress-bar{
         &.pg-bar-success{
-            background: rgb(7,175,167);
-            background: linear-gradient(90deg, rgba(7,175,167,1) 0%, rgba(55,164,6,1) 100%);
+            background: var(--green);
         }
         &.pg-bar-ing{
-            background: rgb(208,18,95);
-            background: linear-gradient(90deg, rgba(208,18,95,1) 0%, rgba(200,11,30,1) 100%);
+            background: var(--primary);
         }
     }
 }
