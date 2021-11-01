@@ -3578,14 +3578,18 @@ a.btn-add-cat{
     &.list-bg-light{
         .accordion__menu{
             background-color: #fbfbfb;
+            overflow: hidden;
         }
         .list-group{
             border-bottom: none;
+            overflow-y: hidden;
+            overflow-x: auto;
         }
         .list-group-item{
             background-color: transparent;
             padding: 0 2.5rem;
             height: 50px;
+            min-width: 1200px;
             .custom-control{
                 label{
                     font-size: 1rem;
