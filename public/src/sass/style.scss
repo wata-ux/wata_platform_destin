@@ -2499,15 +2499,7 @@ em.none-list{
         margin-top: 64px;
     }
 }
-.sidebar-depth{
-    position: absolute;
-    top: 0;
-    left: 464px;
-    height: calc(100% - 64px);
-    width: calc(100% - 464px);
-    margin-top: 64px;
-    z-index: 2;
-    background-color: #fff;
+.page-cover{
     &.sidebar-wide{
         left: 0;
         width: 100%;
@@ -2921,16 +2913,18 @@ em.none-list{
     }
 }
 @media (max-width:1366px){
-    .sidebar-depth-wrap.responsive-item{
-        .tab-cover{
-            flex-direction: column;
-            align-items: flex-start !important;
-            .tab-menu{
-                order: 2;
-            }
-            .sort-cover{
-                order: 1;
-                margin-bottom: 2rem;
+    .page-cover{
+        &.responsive-item{
+            .tab-cover{
+                flex-direction: column;
+                align-items: flex-start !important;
+                .tab-menu{
+                    order: 2;
+                }
+                .sort-cover{
+                    order: 1;
+                    margin-bottom: 2rem;
+                }
             }
         }
     }
