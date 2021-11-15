@@ -10107,6 +10107,7 @@ xnugget info
         h5{
             font-size: 1rem;
             margin: 0;
+            white-space: nowrap;
         }
         p.desc{
             font-size: 1rem;
@@ -10114,9 +10115,10 @@ xnugget info
             margin: 0;
         }
         em{
-            font-size: 1.5rem;
+            font-size: 1rem;
             font-style: normal;
             font-weight: 600;
+            white-space: nowrap;
             // background: $identity;
             // background: linear-gradient(120deg, rgba(255,119,0,1) 0%, rgba(232,59,58,1) 100%);
             // -webkit-background-clip: text;
@@ -10189,7 +10191,7 @@ xnugget info
             border-radius: 5rem;
             font-weight: bold;
             color: #fff;
-            font-size: 1rem;
+            white-space: nowrap;
             &.green-board{
                 background-color: #48D217;
             }
