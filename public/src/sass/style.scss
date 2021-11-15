@@ -10315,6 +10315,11 @@ xnugget info
                             display: none;
                         }
                     }
+                    &.opacity{
+                        .pc-circle, span{
+                            opacity: 0.3;
+                        }
+                    }
                     .pc-circle{
                         display: flex;
                         width: 1.5rem;
