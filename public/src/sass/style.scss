@@ -10206,6 +10206,14 @@ xnugget info
         }
     }
 }
+@media (max-width: 1100px){
+    .accordion-sort{
+        .col-3{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
 .data-rage-cover{
     display: flex;
     align-items: center;
