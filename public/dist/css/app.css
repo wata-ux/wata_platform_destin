@@ -19,7 +19,7 @@
     --white: #fff;
     --gray: #868e96;
     --gray-dark: #343a40;
-    --primary: #5567ff;
+    --primary: #356AD1;
     --secondary: #868e96;
     --success: #77c13a;
     --info: #17a2b8;
@@ -26038,7 +26038,7 @@ a.close.disabled {
 }
 
 .text-primary {
-    color: #5567ff !important
+    color: #356AD1 !important
 }
 
 a.text-primary:focus,

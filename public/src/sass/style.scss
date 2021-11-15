@@ -2279,10 +2279,10 @@ platform map
     box-shadow: inset 0 .1rem .1rem rgba(39, 44, 51, .03) !important;
     .progress-bar{
         &.pg-bar-success{
-            background: var(--green);
+            background: #48D217;
         }
         &.pg-bar-ing{
-            background: var(--primary);
+            background: #356AD1;
         }
     }
 }
@@ -3570,18 +3570,14 @@ a.btn-add-cat{
     &.list-bg-light{
         .accordion__menu{
             background-color: #fbfbfb;
-            overflow: hidden;
         }
         .list-group{
             border-bottom: none;
-            overflow-y: hidden;
-            overflow-x: auto;
         }
         .list-group-item{
             background-color: transparent;
             padding: 0 2.5rem;
             height: 50px;
-            min-width: 1200px;
             .custom-control{
                 label{
                     font-size: 1rem;
@@ -3600,16 +3596,21 @@ a.btn-add-cat{
             display: flex;
             align-items: center;
             padding: 0 1.5rem;
-            margin: 0 1rem;
             height: 100%;
+            min-width: 140px;
             &.state-comp{
-                background-color: var(--teal);
+                background-color: #48D217;
             }
             &.state-play{
-                background-color: var(--blue);
+                background-color: #356AD1;
             }
             &.state-standby{
                 background-color: var(--gray);
+            }
+            &.holder-half{
+                height: 34px;
+                border-radius: .25rem;
+                padding: 0 .75rem;
             }
             strong{
                 color: #fff;
@@ -10018,5 +10019,57 @@ xnugget info
         left: 64px;
         width: calc(100% - 64px);
         border-left: 1px solid $border-color;
+    }
+}
+
+.accordion{
+    &.list-bg-light{
+        .accordion__toggle{
+            padding: 0;
+            height: 50px;
+        }
+        .list-group-item{
+            padding: 0;
+        }
+    }
+}
+
+.ac-table-item{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0 !important;
+    height: 100%;
+    li{
+        display: flex;
+        flex: 1 1 0%;
+        align-items: center;
+        &.ac-col-01{
+            max-width: 40%;
+            padding-left: 1.5rem;
+        }
+        &.ac-col-02{
+            max-width: 15%;
+            justify-content: center;
+        }
+        &.ac-col-03{
+            max-width: 15%;
+            justify-content: center;
+        }
+        &.ac-col-04{
+            max-width: 12%;
+            justify-content: center;
+        }
+        &.ac-col-05{
+            max-width: 12%;
+            justify-content: center;
+            margin-left: auto;
+        }
+        &.ac-col-06{
+            max-width: 50px;
+            justify-content: end;
+            margin-left: auto;
+        }
     }
 }
