@@ -21,7 +21,7 @@
     --gray-dark: #343a40;
     --primary: #356AD1;
     --secondary: #868e96;
-    --success: #77c13a;
+    --success: #48D217;
     --info: #17a2b8;
     --warning: #e4a93c;
     --danger: #d9534f;
@@ -12540,7 +12540,7 @@ a.close.disabled {
 [dir] a.bg-success:hover,
 [dir] button.bg-success:focus,
 [dir] button.bg-success:hover {
-    background-color: #5f9a2e !important
+    background-color: #48D217 !important
 }
 
 [dir] a.bg-info:focus,
@@ -28204,7 +28204,7 @@ a.text-primary-pickled-bluewood:hover {
 }
 
 [dir] .bg-success {
-    background-color: #77c13a !important
+    background-color: #48D217 !important
 }
 
 [dir] .bg-info {
