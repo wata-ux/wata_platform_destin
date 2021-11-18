@@ -15,9 +15,9 @@ select{
     border-radius: 0;
     background: url(../images/expand_more.svg) no-repeat right;
 }
-body.layout-mini-secondary{
-    min-width: 1100px;
-}
+// body.layout-mini-secondary{
+//     min-width: 1100px;
+// }
 input::placeholder, textarea::placeholder{
     color: rgb(189, 189, 189);
     font-weight: normal;
@@ -2078,7 +2078,8 @@ platform map
             .user-inner, 
             .assets-inner,
             .company-inner,
-            .graph-inner{
+            .graph-inner,
+            .distribution-inner{
                 padding-bottom: 5rem;
             }
         }
@@ -2497,6 +2498,58 @@ em.none-list{
         height: calc(100% - 64px);
         margin-top: 64px;
     }
+}
+.layout-mini-secondary{
+    .layout-mini-secondary__drawer{
+        .mdk-drawer__content{
+            width: 100%;
+        }
+    } 
+    .sidebar-secondary{
+        width: calc(100% - 50px);
+        left: 50px;
+        .navbar-toggler-close{
+            width: 50px;
+            height: 50px;
+        }
+        h3{
+            font-size: 1.25rem;
+        }
+        
+    }
+    .sidebar-mini{
+        width: 50px;
+        .sidebar-brand{
+            min-height: 50px;
+        }
+    }
+} 
+@media (min-width: 768px){
+    .layout-mini-secondary{
+        .layout-mini-secondary__drawer{
+            .mdk-drawer__content{
+                width: 464px;
+            }
+        } 
+        .sidebar-secondary{
+            width: 400px;
+            left: 64px;
+            h3{
+                font-size: 1.414rem;
+            }
+        }
+        .sidebar-mini{
+            width: 64px;
+            .sidebar-brand{
+                min-height: 64px;
+            }
+            .sidebar-menu-text{
+                display: flex;
+                font-size: .75rem;
+                line-height: 2.2;
+            }
+        }
+    } 
 }
 .page-cover{
     &.sidebar-wide{
@@ -4885,7 +4938,7 @@ a.cd-filter-trigger {
     background-color: #f9f9f9;
     align-items: center;
     border-radius: 4rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     i{
         font-size: 1rem;
         margin-right: .5rem;
@@ -10341,9 +10394,4 @@ xnugget info
             }
         }
     }
-}
-.layout-mini-secondary .sidebar-mini .sidebar-menu-text{
-    display: flex;
-    font-size: .75rem;
-    line-height: 2.2;
 }
