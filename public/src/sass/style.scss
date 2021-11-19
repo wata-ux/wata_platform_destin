@@ -3583,6 +3583,7 @@ a.btn-add-cat{
                 height: 34px;
                 border-radius: .25rem;
                 padding: 0 .75rem;
+                min-width: auto;
             }
             strong{
                 color: #fff;
@@ -9993,6 +9994,7 @@ xnugget info
 }
 
 .accordion{
+    position: relative;
     &.list-bg-light{
         .accordion__toggle{
             padding: 0;
