@@ -10446,7 +10446,7 @@ xnugget info
 	em.cd-scroll-right {
 		/* small right arrow that indicates it's possible to scroll right */
 		display: block;
-		right: 0;
+		right: -15px;
 		background: url("../images/small-arrow-right.svg") no-repeat center center;
 		&.moving{
 			display: none;
@@ -10454,7 +10454,7 @@ xnugget info
 	}
 	em.cd-scroll-left{
 		display: none;
-		left: 0;
+		left: -15px;
 		background: url("../images/small-arrow-left.svg") no-repeat center center;
 		&.moving{
 			display: block;
