@@ -83,6 +83,31 @@ jQuery(document).ready(function ($) {
 			});
 		}
 	}
+
+		$(function($){
+		var $columns_number = $('#tableCross .cover').find('.normal_type02').length;
+
+		$('.cover').on('scroll', function(){ 
+			$this = $(this);
+			//hide the arrow on scrolling
+			if( $this.scrollLeft() > 0 ) {
+				$('.cd-scroll-right').addClass('moving');
+				$('.cd-scroll-left').addClass('moving');
+			} else{
+				$('.cd-scroll-right').removeClass('moving');
+				$('.cd-scroll-left').removeClass('moving');
+			}
+			//remove color gradient when table has scrolled to the end
+			var total_table_width = parseInt($('.cd-table-wrapper').css('width').replace('px', '')),
+				table_viewport = parseInt($('#tableCross').css('width').replace('px', ''));
+
+			if( $this.scrollLeft() >= total_table_width - table_viewport - $columns_number) {
+				$('#tableCross').addClass('table-end');
+			} else {
+				$('#tableCross').removeClass('table-end');
+			}
+		});
+	});
 });
 
 

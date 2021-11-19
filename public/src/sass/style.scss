@@ -10529,5 +10529,10 @@ xnugget info
                 }
             }
         }
-    } 
+    }
+    .tableCross{
+        em.cd-scroll-right, em.cd-scroll-left{
+            display: none;
+        }
+    }
 }
