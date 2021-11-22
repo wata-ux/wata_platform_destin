@@ -3556,39 +3556,6 @@ a.btn-add-cat{
                 }
             }
         }
-        .duration-record-holder{
-            display: flex;
-            .cell{
-                display: flex;
-                align-items: center;
-                padding: 0 1rem;
-            }
-        }
-        .duration-time-holder{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            min-width: 100%;
-            &.state-comp{
-                background-color: #48D217;
-            }
-            &.state-play{
-                background-color: #356AD1;
-            }
-            &.state-standby{
-                background-color: var(--gray);
-            }
-            &.holder-half{
-                height: 34px;
-                border-radius: .25rem;
-                padding: 0 .75rem;
-                min-width: auto;
-            }
-            strong{
-                color: #fff;
-            }
-        }
         .accordion__toggle{
             padding: 0;
         }
@@ -9999,18 +9966,6 @@ xnugget info
     }
 }
 
-.accordion{
-    .ac-table-item{
-        li{
-
-        }
-        .ac-col-01{
-        }
-        .ac-col-02, .ac-col-03{
-        }
-    }
-}
-
 .ac-table-item{
     list-style-type: none;
     padding: 0;
@@ -10024,50 +9979,90 @@ xnugget info
         align-items: center;
         border-bottom: 1px solid $border-color;
     }
-    .ac-col-01{
-        max-width: 65%;
-        flex: 0 0 65%;
-        padding: 1rem;
-    }
     .cell-group{
+        display: flex;
+        align-items: center;
         max-width: 35%;
         flex: 0 0 35%;
         flex-direction: column;
         border-left: 1px solid $border-color;
         .cell{
             width: 100%;
-            align-items: center;
             justify-content: center;
             min-height: 45px;
         }
+        .ac-col-02, .ac-col-03{
+            .cover{
+                display: flex;
+                align-items: center;
+                padding: 0 .5rem;
+            }
+        }
         .ac-col-02{
             order: 1;
-            span{
-                display: none;
-            }
         }
         .ac-col-03{
             order: 2;
-            border-bottom: none;
-            span{
-                display: none;
-            }
         }
         .ac-col-04{
             order: 0;
         }
+    }
+    .ac-col-01{
+        max-width: 65%;
+        flex: 0 0 65%;
+        padding: 1rem;
     }
     .ac-col-05{
         max-width: 65%;
         flex: 0 0 65%;
         min-height: 46px;
         border-bottom: none;
+        justify-content: center;
+        .progress-cover{
+            display: flex;
+            flex: 1 1 0%;
+            padding: 0 1rem;
+            margin-left: auto;
+            .progress{
+                width: 100%;
+            }
+        }
     }
     .ac-col-06{
         flex: 0 0 35%;
         max-width: 35%;
         justify-content: center;
         border-bottom: none;
+    }
+    .duration-record-holder{
+        display: flex;
+        .cell{
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+        }
+    }
+    .duration-time-holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 100%;
+        &.state-comp{
+            background-color: #48D217;
+        }
+        &.state-play{
+            background-color: #356AD1;
+        }
+        &.state-standby{
+            background-color: var(--gray);
+        }
+        &.holder-half{
+        }
+        strong{
+            color: #fff;
+        }
     }
 }
 
@@ -10200,11 +10195,62 @@ xnugget info
         }
     }
 }
-@media (max-width: 1100px){
-    .accordion-sort{
-        .col-3{
-            flex: 0 0 50%;
-            max-width: 50%;
+@media (min-width: 1100px){
+    .accordion{
+        &.list-bg-light{
+            .accordion__toggle{
+            }
+        }
+    }
+    .ac-table-item{
+        .cell{
+            flex: none;
+            min-height: 50px;
+            border-bottom: none;
+        }
+        .cell-group{
+            max-width: inherit;
+            flex: 0 0 40%;
+            flex-direction: row;
+            max-width: 40%;
+            border-left: none;
+            .cell{
+                flex: 1 1 0%;
+                min-height: 50px;
+            }
+            .ac-col-02{
+                order: 0;
+            }
+            .ac-col-03{
+                order: 1;
+            }
+            .ac-col-04{
+                order: 2;
+                padding: 0 1rem;
+            }
+        }
+        .ac-col-01{
+            max-width: 40%;
+            flex-basis: 40%;
+            padding: .5rem 1rem;
+        }
+        .ac-col-05{
+            max-width: 15%;
+            flex-basis: 15%;
+        }
+        .ac-col-06{
+            max-width: 5%;
+            margin-left: auto;
+        }
+        .duration-time-holder{
+            height: 50px;
+            padding: 0 .75rem;
+            &.holder-half{
+                height: 34px;
+                border-radius: .25rem;
+                padding: 0 .75rem;
+                min-width: auto;
+            }
         }
     }
 }
@@ -10252,13 +10298,13 @@ xnugget info
         width: 100%;
         span{
             display: flex;
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin-bottom: .25rem;
         }
         em{
             display: flex;
             font-style: normal;
-            font-size: 1.75rem;
+            font-size: 2.5rem;
             margin-bottom: .5rem;
         }
     }

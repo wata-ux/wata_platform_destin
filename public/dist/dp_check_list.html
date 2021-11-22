@@ -351,7 +351,7 @@
             </div>
             <div class="contents-view">
                 <h4>세부 공정 사항</h4>
-                <div  id="tableCross" class="tableCross">
+                <div id="tableCross" class="tableCross">
                     <div class="cover">
                         <div class="cd-table-wrapper">
                             <table class="table normal_type02 mb-0 table-nowrap thead-bg-light">
@@ -383,17 +383,19 @@
                         </div>
                     </div>
                     <em class="cd-scroll-right"></em>
-					<em class="cd-scroll-left"></em>	
+                    <em class="cd-scroll-left"></em>
                 </div>
                 <div class="page-separator mt-5">
                     <div class="page-separator__text">체크리스트</div>
                 </div>
                 <div class="accordion js-accordion accordion--boxed list-group-flush list-bg-light" id="parent">
-                    <div class="accordion__item open">
+                    <div class="accordion__item">
                         <div class="accordion__toggle">
                             <div class="ac-table-item">
-                                <div class="cell ac-col-01"><h6 class="flex m-0">조립 1공정(준비공정)</h6></div>
-                                <div class="cell cell-group">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 1공정(준비공정)</h6>
+                                </div>
+                                <div class="cell-group">
                                     <div class="cell ac-col-02">공정 시작</div>
                                     <div class="cell ac-col-03">공정 완료</div>
                                     <div class="cell ac-col-04">
@@ -404,36 +406,50 @@
                                     </div>
                                 </div>
                                 <div class="cell ac-col-05">
-                                    <div class="flex ml-auto px-4">
+                                    <div class="progress-cover">
                                         <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-success" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                                            <div class="progress-bar pg-bar-success" role="progressbar"
+                                                style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
+                                                aria-valuemax="100">100%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cell ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-1"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-1" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion__menu collapse show" id="course-toc-1">
+                        <div class="accordion__menu collapse" id="course-toc-1">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem01-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem01-01" class="custom-control-label">Production check sheet 및 S/N 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem01-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem01-01" class="custom-control-label">Production
+                                                        check sheet 및 S/N 확인</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -441,8 +457,9 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -450,19 +467,30 @@
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem01-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem01-02" class="custom-control-label">생산출고자재 품목/수량
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem01-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem01-02" class="custom-control-label">생산출고자재
+                                                        품목/수량
                                                         출고전표와 일치</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -470,8 +498,9 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -479,19 +508,30 @@
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem01-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem01-03" class="custom-control-label">작업표준에 따른 라벨 부착
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem01-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem01-03" class="custom-control-label">작업표준에 따른 라벨
+                                                        부착
                                                         확인</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -499,8 +539,9 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -508,19 +549,30 @@
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem01-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem01-04" class="custom-control-label">덕트 및 딘레일 절단 치수
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem01-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem01-04" class="custom-control-label">덕트 및 딘레일 절단
+                                                        치수
                                                         확인</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -528,8 +580,9 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -537,19 +590,29 @@
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem01-05" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem01-05" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem01-05" class="custom-control-label">공정별 자재 투입
                                                         확인</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -557,59 +620,75 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="accordion__item open">
+                    <div class="accordion__item">
                         <div class="accordion__toggle">
                             <div class="ac-table-item">
-                                <div class="cell ac-col-01"><h6 class="flex m-0">조립 2공정(기초공정)</h6></div>
-                                <div class="cell cell-group">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 2공정(기초공정)</h6>
+                                </div>
+                                <div class="cell-group">
                                     <div class="cell ac-col-02">공정 시작</div>
                                     <div class="cell ac-col-03">공정 완료</div>
                                     <div class="cell ac-col-04">
                                         <div class="duration-time-holder state-play">
-                                            <span class="text-light mb-0 mr-3">L/T</span>
+                                            <span class="text-light mb-0 mr-2">L/T</span>
                                             <strong>00:02:12</strong>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cell ac-col-05">
-                                    <div class="flex ml-auto px-4">
+                                    <div class="progress-cover">
                                         <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 36%;" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">36%</div>
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 36%;"
+                                                aria-valuenow="36" aria-valuemin="0" aria-valuemax="100">36%</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="cell ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-2"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-2" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion__menu collapse show" id="course-toc-2">
+                        <div class="accordion__menu collapse" id="course-toc-2">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
                                     <div class="ac-table-item">
                                         <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem02-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem02-01" class="custom-control-label">작업표준서에 따른 작업 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem02-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem02-01" class="custom-control-label">작업표준서에 따른
+                                                        작업 확인</label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="cell cell-group">
+                                        <div class="cell-group">
                                             <div class="cell ac-col-02">
-                                                <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-03">
-                                                <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
+                                                </div>
                                             </div>
                                             <div class="cell ac-col-04"></div>
                                         </div>
@@ -617,992 +696,1141 @@
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
                                         </div>
                                         <div class="cell ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem02-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem02-02" class="custom-control-label">Bolt 체결 상태 확인 (Torque, 아이마킹)</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem02-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem02-02" class="custom-control-label">Bolt 체결 상태
+                                                        확인 (Torque, 아이마킹)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                            <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
-                                        </li>
-                                        <li class="ac-col-03">
-                                            <span class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01, 13:24
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
-                                        </li>
-                                        <li class="ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
-                                            <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem02-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem02-03" class="custom-control-label">케이블 체결상태 확인</label>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02">
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                            <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
-                                        </li>
-                                        <li class="ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
-                                            <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem02-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem02-04" class="custom-control-label">FUSE 부착 위치 확인 (전면에 라벨이 보이게 부착)</label>
+                                            <div class="cell ac-col-03">
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons font-size-16pt text-30 mr-1">check_circle</span>21-10-01,
+                                                    13:24
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                            <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05">
                                             <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
-                                        </li>
-                                        <li class="ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
-                                            <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem02-05" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem02-05" class="custom-control-label">AC Capacitor whdla 전용 토크렌치사용 (MAX 10 N/M)</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                            <span class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01, 13:24
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
-                                        </li>
-                                        <li class="ac-col-06">
-                                            <a href="#n" class="d-flex h-100 align-items-center px-3" data-toggle="modal" data-target="#historyModal"><span
-                                                class="material-icons-outlined">history</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion__item open">
-                        <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">조립 3공정(전장품부착공정)</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                        <div class="cell ac-col-06">
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-3"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="accordion__menu collapse show" id="course-toc-3">
-                            <div class="list-group list-group-flush border-top-1">
-                                <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
-                                            <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem03-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem03-01" class="custom-control-label">작업표준에 따른 작업 확인</label>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem03-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem03-02" class="custom-control-label">덕트 및 딘레일 부착 상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem02-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem02-03" class="custom-control-label">케이블 체결상태
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02">
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
+                                            </div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05">
+                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
+                                        </div>
+                                        <div class="cell ac-col-06">
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem03-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem03-03" class="custom-control-label">전장품 부착상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem02-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem02-04" class="custom-control-label">FUSE 부착 위치
+                                                        확인 (전면에 라벨이 보이게 부착)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02">
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
+                                                </div>
+                                            </div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05">
+                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
+                                        </div>
+                                        <div class="cell ac-col-06">
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem03-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem03-04" class="custom-control-label">애자 부착상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem02-05" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem02-05" class="custom-control-label">AC
+                                                        Capacitor whdla 전용 토크렌치사용 (MAX 10 N/M)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
-                                </div>
-                                <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
-                                            <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem03-05" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem03-05" class="custom-control-label">도어 및 커버 보관 상태 확인</label>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02">
+                                                <div class="cover">
+                                                    <span
+                                                        class="material-icons-outlined font-size-16pt text-30 mr-1">play_circle_filled</span>21-10-01,
+                                                    13:24
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05">
+                                            <span class="badge-pich ml-3 font-weight-bolder">Leo jeong</span>
+                                        </div>
+                                        <div class="cell ac-col-06">
+                                            <a href="#n" class="d-flex h-100 align-items-center px-3"
+                                                data-toggle="modal" data-target="#historyModal"><span
+                                                    class="material-icons-outlined">history</span></a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">조립 4공정(부스바공정)</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 3공정(전장품부착공정)</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-4"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-3" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__menu collapse" id="course-toc-3">
+                            <div class="list-group list-group-flush border-top-1">
+                                <div class="list-group-item">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem03-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem03-01" class="custom-control-label">작업표준에 따른 작업
+                                                        확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem03-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem03-02" class="custom-control-label">덕트 및 딘레일 부착
+                                                        상태 확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem03-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem03-03" class="custom-control-label">전장품 부착상태
+                                                        확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem03-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem03-04" class="custom-control-label">애자 부착상태
+                                                        확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
+                                </div>
+                                <div class="list-group-item">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
+                                            <div class="d-flex align-items-center">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem03-05" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem03-05" class="custom-control-label">도어 및 커버 보관
+                                                        상태 확인</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__toggle">
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 4공정(부스바공정)</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
+                                        </div>
+                                    </div>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-4" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-4">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem04-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem04-01" class="custom-control-label">작업표준서에 따른 작업 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem04-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem04-01" class="custom-control-label">작업표준서에 따른
+                                                        작업 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem04-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem04-02" class="custom-control-label">부스바 체결상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem04-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem04-02" class="custom-control-label">부스바 체결상태
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem04-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem04-03" class="custom-control-label">Bolt 체결 상태 확인 (Torque, 아이마킹)</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem04-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem04-03" class="custom-control-label">Bolt 체결 상태
+                                                        확인 (Torque, 아이마킹)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem04-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem04-04" class="custom-control-label">풀림방지너트와 일반너트 사용 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem04-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem04-04" class="custom-control-label">풀림방지너트와
+                                                        일반너트 사용 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">조립 5공정(하네스공정)</h6></li>
-                                <li class="ac-col-02">공정 시작</li>
-                                <li class="ac-col-03">
-                                    <div class="duration-time-holder holder-half state-comp">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons mb-0 mr-3">check_circle</span></a>
-                                        <strong>공정 완료</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 5공정(하네스공정)</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">공정 시작</div>
+                                    <div class="cell ac-col-03">
+                                        <div class="duration-time-holder holder-half state-comp">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons mb-0 mr-2">check_circle</span></a>
+                                            <strong>공정 완료</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-5"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-5" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-5">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem05-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem05-01" class="custom-control-label">스마트와이어링키트 사용 작업 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem05-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem05-01" class="custom-control-label">스마트와이어링키트
+                                                        사용 작업 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem05-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem05-02" class="custom-control-label">케이블 체결상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem05-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem05-02" class="custom-control-label">케이블 체결상태
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem05-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem05-03" class="custom-control-label">페라이트코어 부착상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem05-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem05-03" class="custom-control-label">페라이트코어 부착상태
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem05-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem05-04" class="custom-control-label">통신케이블 배선 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem05-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem05-04" class="custom-control-label">통신케이블 배선
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">조립 6공정(하네스공정)</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립 6공정(하네스공정)</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-6"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-6" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-6">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem06-01" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem06-01" class="custom-control-label">제품 내외부 청결 상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem06-01" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem06-01" class="custom-control-label">작업표준서에 따른
+                                                        작업 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem06-02" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem06-02" class="custom-control-label">세이프티커버 부착 상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem06-02" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem06-02" class="custom-control-label">부스바 체결상태
+                                                        확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem06-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem06-03" class="custom-control-label">라벨류(주의, 심볼등등) 부착상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem06-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem06-03" class="custom-control-label">Bolt 체결 상태
+                                                        확인 (Torque, 아이마킹)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem06-04" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem06-04" class="custom-control-label">첨부품 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem06-04" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem06-04" class="custom-control-label">풀림방지너트와
+                                                        일반너트 사용 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">조립검사</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">조립검사</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-7"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-7" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-7">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-01" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-01" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem07-01" class="custom-control-label">하네스 케이블 결선상태</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-02" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-02" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem07-02" class="custom-control-label">조립 C/S(조하시스템 자체 C/S)</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-03" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem07-03" class="custom-control-label">Label 및 볼트, Fuse 상태 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-03" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem07-03" class="custom-control-label">Label 및 볼트. Fuse상태 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-04" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-04" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem07-04" class="custom-control-label">내부 최종 조립 상태</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-05" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-05" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem07-05" class="custom-control-label">단선상태 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-06" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-06" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem07-06" class="custom-control-label">자재/도면 변경, 문제 Point 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="cell ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem07-07" type="checkbox" class="custom-control-input">
-                                                    <label for="checkItem07-07" class="custom-control-label">LF1(Reactor) 확인</label>
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem07-07" type="checkbox"
+                                                        class="custom-control-input">
+                                                    <label for="checkItem07-07" class="custom-control-label">LF1(Reactor)확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">공정품질 검사</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">공정품질 검사</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-8"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-8" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-8">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem08-01" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem08-01" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem08-01" class="custom-control-label">진척 여부 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">양산 검사</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">양산 검사</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-9"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-9" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-9">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem09-01" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem09-01" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem09-01" class="custom-control-label">진척 여부 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">출하검사</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">출하 검사</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-10"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-10" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-10">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem10-01" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem10-01" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem10-01" class="custom-control-label">진척 여부 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion__item">
                         <div class="accordion__toggle">
-                            <ul class="ac-table-item">
-                                <li class="ac-col-01"><h6 class="flex m-0">출하</h6></li>
-                                <li class="ac-col-02">
-                                    <div class="duration-time-holder holder-half state-play">
-                                        <a href="#n" class="d-flex text-light"><span class="material-icons-outlined mb-0 mr-3">play_circle_filled</span></a>
-                                        <strong>공정 시작</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-03">공정 완료</li>
-                                <li class="ac-col-04">
-                                    <div class="duration-time-holder state-standby">
-                                        <span class="text-light mb-0 mr-3">L/T</span>
-                                        <strong>-</strong>
-                                    </div>
-                                </li>
-                                <li class="ac-col-05">
-                                    <div class="flex ml-auto px-4">
-                                        <div class="progress" style="height: 18px;">
-                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                            <div class="ac-table-item">
+                                <div class="cell ac-col-01">
+                                    <h6 class="flex m-0">출하</h6>
+                                </div>
+                                <div class="cell-group">
+                                    <div class="cell ac-col-02">
+                                        <div class="duration-time-holder holder-half state-play">
+                                            <a href="#n" class="d-flex text-light"><span
+                                                    class="material-icons-outlined mb-0 mr-2">play_circle_filled</span></a>
+                                            <strong>공정 시작</strong>
                                         </div>
                                     </div>
-                                </li>
-                                <li class="ac-col-06">
-                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-11"
-                                    data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
-                                </li>
-                            </ul>
+                                    <div class="cell ac-col-03">공정 완료</div>
+                                    <div class="cell ac-col-04">
+                                        <div class="duration-time-holder state-standby">
+                                            <span class="text-light mb-0 mr-2">L/T</span>
+                                            <strong>-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-05">
+                                    <div class="progress-cover">
+                                        <div class="progress" style="height: 18px;">
+                                            <div class="progress-bar pg-bar-ing" role="progressbar" style="width: 0%;"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cell ac-col-06">
+                                    <a href="#n" class="d-flex h-100 align-items-center px-3 circle-pin"
+                                        data-toggle="collapse" data-target="#course-toc-11" data-parent="#parent"><span
+                                            class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                                </div>
+                            </div>
                         </div>
                         <div class="accordion__menu collapse" id="course-toc-11">
                             <div class="list-group list-group-flush border-top-1">
                                 <div class="list-group-item">
-                                    <ul class="ac-table-item">
-                                        <li class="ac-col-01">
+                                    <div class="ac-table-item">
+                                        <div class="cell ac-col-01">
                                             <div class="d-flex align-items-center">
-                                                <div class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
-                                                    <input id="checkItem11-01" type="checkbox" class="custom-control-input">
+                                                <div
+                                                    class="custom-control custom-checkbox checkbox-lg checkbox-rounded">
+                                                    <input id="checkItem11-01" type="checkbox"
+                                                        class="custom-control-input">
                                                     <label for="checkItem11-01" class="custom-control-label">진척 여부 확인</label>
                                                 </div>
                                             </div>
-                                        </li>
-                                        <li class="ac-col-02">
-                                        </li>
-                                        <li class="ac-col-03">
-                                        </li>
-                                        <li class="ac-col-04"></li>
-                                        <li class="ac-col-05">
-                                        </li>
-                                        <li class="ac-col-06"></li>
-                                    </ul>
+                                        </div>
+                                        <div class="cell-group">
+                                            <div class="cell ac-col-02"></div>
+                                            <div class="cell ac-col-03"></div>
+                                            <div class="cell ac-col-04"></div>
+                                        </div>
+                                        <div class="cell ac-col-05"></div>
+                                        <div class="cell ac-col-06"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-    
             </div>
         </div>
     </div>
@@ -1642,13 +1870,15 @@
                     <div class="tab-pane active" id="dp-process">
                         <div class="distribution-inner">
                             <div class="d-flex d-md-none justify-content-end border-bottom-1">
-                                <button class="navbar-toggler navbar-toggler-close d-block rounded-0" type="button" data-toggle="sidebar">
+                                <button class="navbar-toggler navbar-toggler-close d-block rounded-0" type="button"
+                                    data-toggle="sidebar">
                                     <span class="material-icons">close</span>
                                 </button>
                             </div>
                             <div class="p-3 p-md-4 mb-3 mb-md-4">
                                 <div class="flex d-flex align-items-center">
-                                    <a href="dp_process_landing.html" class="circle-pin pr-2"><i class="material-icons">arrow_back</i></a>
+                                    <a href="dp_process_landing.html" class="circle-pin pr-2"><i
+                                            class="material-icons">arrow_back</i></a>
                                     <div class="mr-24pt">
                                         <h3 class="mb-0">공정 체크리스트</h3>
                                     </div>
