@@ -9235,7 +9235,7 @@ a.badge-secondary:focus {
 }
 
 [dir] .badge-success {
-    background-color: #77c13a
+    background-color: #48D217
 }
 
 a.badge-success:focus,
@@ -26056,7 +26056,7 @@ a.text-secondary:hover {
 }
 
 .text-success {
-    color: #77c13a !important
+    color: #48D217 !important
 }
 
 a.text-success:focus,
