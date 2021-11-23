@@ -446,7 +446,20 @@
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <a href="#n" class="d-flex mr-2" data-toggle="popover" data-trigger="click"><span class="material-icons">help_outline</span></a>
+                                                    <div class="popoverContainer d-none">
+                                                        <p class="text-70 m-0 font-size-16pt">웹사이트의 메뉴 부분은 브라우저 폭이 1024px 이상일 때 space-evenly가 적용되도록 했는데요, IE와 엣지에서만 space-around로 적용이 되도록 처리해 두었어요.</p>
+                                                    </div>
                                                     <h5 class="d-flex mb-0">L/T 증감율</h5>
+                                                    <div class="d-flex ml-2">
+                                                        <select name="category" class="line-select">
+                                                            <option value="">주간</option>
+                                                            <option value="">월간</option>
+                                                            <option value="">분기</option>
+                                                            <option value="">연간</option>
+                                                            <option value="">전체</option>
+                                                        </select>
+                                                    </div>
                                                     <div class="cell ml-auto">
                                                         <em>+ 00:12:00</em>
                                                     </div>
@@ -1297,8 +1310,8 @@
         </div>
     </div>
 
-    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer data-closing" id="default-drawer" style="width: 64px;">
-        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer data-closing" style="width: 64px;">
+        <div class="mdk-drawer__content"  style="width: 64px;">
             
             <div class="sidebar sidebar-mini sidebar-left d-flex flex-column">
                 <!-- Brand -->

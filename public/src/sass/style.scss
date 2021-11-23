@@ -6611,6 +6611,13 @@ dl.space-id{
         margin: 0;
     }
 }
+.line-select{
+    padding-right: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    color: rgba(0,0,0,0.5);
+    background: url(../images/expand_more_trans.svg) no-repeat right;
+}
 /* map zoom/out */
 .btn-widget-holder {
     position: absolute;
