@@ -6615,8 +6615,9 @@ dl.space-id{
     padding-right: 1.5rem;
     border: none;
     font-size: 1rem;
-    color: rgba(0,0,0,0.5);
-    background: url(../images/expand_more_trans.svg) no-repeat right;
+    font-weight: bolder;
+    color: #303956;
+    background: url(../images/expand_more.svg) no-repeat right;
 }
 /* map zoom/out */
 .btn-widget-holder {
