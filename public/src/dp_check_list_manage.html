@@ -4,7 +4,7 @@
     <div class="mdk-drawer-layout__content page-content">
         @@include('./include/platform-topbar.html')
         <div class="page-cover">
-            <div class="d-flex flex-column flex-sm-row align-items-sm-center mb-3">
+            <div class="d-flex flex-row align-items-sm-center mb-3">
                 <div class="flex title-row">
                     <h3 class="d-flex align-items-center mb-0 ">DOOSAN ESM LPG</h3>
                 </div>
@@ -18,32 +18,41 @@
                 </div>
             </div>
             <div class="contents-view">
-                <table class="table lg-table mb-4 table-nowrap thead-bg-light">
-                    <colgroup>
-                        <col width="15%">
-                        <col width="35%">
-                        <col width="15%">
-                        <col width="35%">
-                    </colgroup>
-                    <tr>
-                        <th>프로젝트 명</th>
-                        <td>DOOSAN ESM LPG</td>
-                        <th>작업 시작일</th>
-                        <td>2021-09-17</td>
-                    </tr>
-                    <tr>
-                        <th>거래처</th>
-                        <td>삼성</td>
-                        <th>제품</th>
-                        <td>제품01</td>
-                    </tr>
-                    <tr>
-                        <th>제품 S/N</th>
-                        <td>5N2218-00027VP</td>
-                        <th></th>
-                        <td></td>
-                    </tr>
-                </table>
+                <div id="tableCross" class="tableCross">
+                    <div class="cover">
+                        <div class="cd-table-wrapper">
+                            <table class="table lg-table mb-4 table-nowrap thead-bg-light">
+                                <colgroup>
+                                    <col width="15%">
+                                    <col width="35%">
+                                    <col width="15%">
+                                    <col width="35%">
+                                </colgroup>
+                                <tr>
+                                    <th>프로젝트 명</th>
+                                    <td>DOOSAN ESM LPG</td>
+                                    <th>작업 시작일</th>
+                                    <td>2021-09-17</td>
+                                </tr>
+                                <tr>
+                                    <th>거래처</th>
+                                    <td>삼성</td>
+                                    <th>제품</th>
+                                    <td>제품01</td>
+                                </tr>
+                                <tr>
+                                    <th>제품 S/N</th>
+                                    <td>5N2218-00027VP</td>
+                                    <th></th>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <em class="cd-scroll-right"></em>
+                    <em class="cd-scroll-left"></em>
+                </div>
+                
                 <div class="page-separator mt-5">
                     <div class="page-separator__text">체크리스트</div>
                 </div>

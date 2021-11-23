@@ -10065,6 +10065,16 @@ xnugget info
         }
     }
 }
+.accordion{
+    &.res-type2{
+        .accordion__toggle{
+            padding: .75rem 1rem;
+        }
+        .list-group-item{
+            padding: .75rem 1rem;
+        }
+    }
+}
 
 .sort-btn-group{
     .sort-btn{
