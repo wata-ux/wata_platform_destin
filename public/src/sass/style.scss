@@ -10330,6 +10330,9 @@ xnugget info
             margin-bottom: .5rem;
             font-weight: bolder;
             word-break: break-all;
+            &.keep{
+                word-break: keep-all;
+            }
             @media (min-width:1366px) {
                 font-size: 2.5rem;
             }
