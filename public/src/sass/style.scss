@@ -10214,12 +10214,6 @@ xnugget info
     }
 }
 @media (min-width: 1100px){
-    .accordion{
-        &.list-bg-light{
-            .accordion__toggle{
-            }
-        }
-    }
     .ac-table-item{
         .cell{
             flex: none;
@@ -10313,18 +10307,55 @@ xnugget info
     .front-info{
         display: flex;
         flex-direction: column;
+        padding-right: 1rem;
         width: 100%;
+        align-content: space-between;
         span{
             display: flex;
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin-bottom: .25rem;
+            word-break: keep-all;
+            .badge{
+                font-size: 1rem;
+                border-radius: .25rem;
+            }
+            @media (min-width:1366px) {
+                font-size: 1.5rem;
+            }
         }
         em{
             display: flex;
             font-style: normal;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: .5rem;
             font-weight: bolder;
+            word-break: break-all;
+            @media (min-width:1366px) {
+                font-size: 2.5rem;
+            }
+        }
+        .location{
+            display: flex;
+            flex-direction: row;
+            span{
+                display: flex;
+                font-size: 1rem;
+                margin: 0;
+                letter-spacing: -.3px;
+                color: #868e96;
+                &:after{
+                    content: '\e5e1';
+                    display: flex;
+                    font-family: 'Material Icons';
+                    padding: 0 .5rem;
+                    align-items: center;
+                }
+                &:last-of-type{
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
         }
     }
     .process-board{
