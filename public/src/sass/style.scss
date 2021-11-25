@@ -10304,6 +10304,39 @@ xnugget info
     .accordion__toggle{
         background-color: #fff;
     }
+    .cell-group{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -12px;
+        margin-right: -12px;
+        padding: 1rem;
+        width: 100%;
+        .cell{
+            display: flex;
+            padding-right: 12px;
+            padding-left: 12px;
+            &.cell-item01, &.cell-item02{
+                flex: 0 0 22%;
+                max-width: 22%;
+                @media (min-width:1366px) {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+            }
+            &.cell-item03, &.cell-item04{
+                flex: 0 0 21%;
+                max-width: 21%;
+                @media (min-width:1366px) {
+                    flex: 0 0 18%;
+                    max-width: 18%;
+                }
+            }
+            &.cell-item05{
+                flex: 0 0 14%;
+                max-width: 14%;
+            }
+        }
+    }
     .front-info{
         display: flex;
         flex-direction: column;
@@ -10329,7 +10362,7 @@ xnugget info
             font-size: 2rem;
             margin-bottom: .5rem;
             font-weight: bolder;
-            word-break: break-all;
+            word-break: keep-all;
             &.keep{
                 word-break: keep-all;
             }
@@ -10434,6 +10467,7 @@ xnugget info
             }
         }
     }
+
 }
 
 .layout-mini-secondary{
