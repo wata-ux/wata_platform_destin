@@ -10372,7 +10372,10 @@ xnugget info
         }
         .location{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            @media (min-width:1366px) {
+                flex-direction: row;
+            }
             span{
                 display: flex;
                 font-size: 1rem;
