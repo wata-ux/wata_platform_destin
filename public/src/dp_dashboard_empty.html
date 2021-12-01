@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WATA</title>
+
+    <!-- Prevent the demo from appearing in search engines -->
+    <meta name="robots" content="noindex">
+        
+    <link rel="icon" href="images/icon/favicon.svg">
+	<link rel="apple-touch-icon" href="images/icon/1x/wata_symbol_64dp.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="images/icon/1x/wata_symbol_96dp.png">
+	<link rel="apple-touch-icon" sizes="128x128" href="images/icon/2x/wata_symbol_64dp.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="images/icon/2x/wata_symbol_96dp.png">
+
+    <!-- Preloader -->
+    <link type="text/css" href="vendor/spinkit.css" rel="stylesheet" />
+
+    <!-- Perfect Scrollbar -->
+    <link type="text/css" href="vendor/perfect-scrollbar.css" rel="stylesheet" />
+
+    <!-- Material Design Icons -->
+    <link type="text/css" href="css/material-icons.css" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link type="text/css" href="css/fontawesome.css" rel="stylesheet" />
+
+    <!-- Preloader -->
+    <link type="text/css" href="css/preloader.css" rel="stylesheet" />
+
+    <!-- App CSS -->
+    <link type="text/css" href="css/app.css" rel="stylesheet" />
+
+    <!-- Flatpickr -->
+    <link type="text/css" href="css/flatpickr.css" rel="stylesheet" />
+    <link type="text/css" href="css/flatpickr-airbnb.css" rel="stylesheet" />
+
+    <!-- DateRangePicker -->
+    <link type="text/css" href="vendor/daterangepicker.css" rel="stylesheet" />
+
+    <!-- Quill Theme -->
+    <link type="text/css" href="css/quill.css" rel="stylesheet" />
+
+    <!-- Touchspin -->
+    <link type="text/css" href="css/bootstrap-touchspin.css" rel="stylesheet" />
+
+    <!-- Select2 -->
+    <link type="text/css" href="vendor/select2/select2.min.css" rel="stylesheet" />
+    <link type="text/css" href="css/select2.css" rel="stylesheet" />
+
+     <!-- ion Range Slider -->
+     <link type="text/css" href="css/ion-rangeslider.css" rel="stylesheet" />
+
+     <!-- Dragula -->
+     <link type="text/css" href="vendor/dragula/dragula.min.css" rel="stylesheet" />
+
+    <!-- custom CSS -->
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    
+    <!-- https://material.io/resources/icons/?style=baseline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=round -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+    rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=sharp -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+    rel="stylesheet">
+
+    <!-- https://material.io/resources/icons/?style=twotone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+    rel="stylesheet">
+
+</head>
+
+<body class="layout-mini-secondary dp_dashboard">
+
+    <!-- <div class="preloader">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+        </div>
+    </div> -->
+
+
+<div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="1365px">
+    <div class="mdk-drawer-layout__content page-content">
+        @@include('./include/platform-topbar.html')
+        <div class="page-cover responsive-item">
+
+            <div class="tab-cover mb-4">
+                <ul class="nav tab-menu" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#sidebar-menu01">제 1공장</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#sidebar-menu02">제 2공장</a>
+                    </li>
+                </ul>
+                <div class="sort-cover">
+                    <div class="custom-control custom-checkbox d-flex align-items-center mr-4">
+                        <input type="checkbox" class="custom-control-input" id="sort-item01">
+                        <label class="custom-control-label" for="sort-item01">화면전환</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center mr-4">
+                        <input type="checkbox" class="custom-control-input" id="sort-item02">
+                        <label class="custom-control-label" for="sort-item02">완료 공정 숨김</label>
+                    </div>
+                    <div class="custom-control custom-checkbox d-flex align-items-center mr-4">
+                        <input type="checkbox" class="custom-control-input" id="sort-item03">
+                        <label class="custom-control-label" for="sort-item03">전체 펼침</label>
+                    </div>
+                    <select name="category" class="form-control custom-select">
+                        <option value="">내림차순</option>
+                        <option value="">오름차순</option>
+                        <option value="">정렬선택</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div id="sidebar-menu01" class="tab-pane active" role="tabpanel">
+                    <div class="accordion js-accordion list-group-flush accordion-sort" id="parent">
+                        <div class="accordion__item">
+                            <div class="accordion__toggle">
+                                <h5 class="m-0 text-nowrap">기간</h5>
+                                <div class="ml-4">
+                                    <div class="data-rage-cover">
+                                        <span class="material-icons-outlined">date_range</span>
+                                        <input id="flatpickrSample02" type="hidden" class="form-control flatpickr-input"
+                                            data-toggle="flatpickr" data-flatpickr-mode="range" value="today"
+                                            placeholder="기간을 설정해주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__toggle">
+                                <h5 class="m-0 text-nowrap">제품군</h5>
+                                <div class="sort-btn-group ml-4">
+                                    <a href="#n" class="sort-btn active">전체</a>
+                                    <a href="#n" class="sort-btn">ESS ALL in ONE</a>
+                                    <a href="#n" class="sort-btn">ESS PCS</a>
+                                    <a href="#n" class="sort-btn">Multi Function PCS</a>
+                                    <a href="#n" class="sort-btn">Solar Inverter</a>
+                                    <a href="#n" class="sort-btn">Hybrid inverter</a>
+                                    <a href="#n" class="sort-btn">Fuel Cell Inverter</a>
+                                    <a href="#n" class="sort-btn">Industrial UPS</a>
+                                </div>
+                                <a href="#n" class="d-flex h-100 align-items-center ml-auto px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-1"
+                                data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                            </div>
+                            <div class="accordion__menu collapse bg-light border-top-1" id="course-toc-1">
+                                <div class="row p-3">
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">생산건수</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>13</em>
+                                                        <span class="text-dark font-size-16pt font-weight-bold">건</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 7건
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 6건
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">평균 L/T</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>1d 09:24:15</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 09:24:15
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 06:24:15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">L/T 증감율</h5>
+                                                    <div class="d-flex ml-2">
+                                                        <select name="category" class="line-select">
+                                                            <option value="">주간</option>
+                                                            <option value="">월간</option>
+                                                            <option value="">분기</option>
+                                                            <option value="">연간</option>
+                                                            <option value="">전체</option>
+                                                        </select>
+                                                    </div>
+                                                    <a href="#n" class="d-flex ml-2" data-toggle="popover" data-trigger="click"><span class="material-icons">help_outline</span></a>
+                                                    <div class="popoverContainer d-none">
+                                                        <p class="text-70 m-0 font-size-16pt">웹사이트의 메뉴 부분은 브라우저 폭이 1024px 이상일 때 space-evenly가 적용되도록 했는데요, IE와 엣지에서만 space-around로 적용이 되도록 처리해 두었어요.</p>
+                                                    </div>
+                                                    <div class="cell ml-auto">
+                                                        <em>+ 00:12:00</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 +00:16:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 -00:12:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">공정률</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>78.2%</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-12">
+                                                        <div class="cell blue-board">
+                                                            진행 45.2%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__toggle">
+                                <h5 class="m-0 text-nowrap">제품타입</h5>
+                                <div class="sort-btn-group ml-4">
+                                    <a href="#n" class="sort-btn active">전체</a>
+                                    <a href="#n" class="sort-btn">SAVEEN EVE Hybrid 60</a>
+                                    <a href="#n" class="sort-btn">SANEEN EVE Hybrid 200</a>
+                                </div>
+                                <a href="#n" class="d-flex h-100 align-items-center ml-auto px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-2"
+                                data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                            </div>
+                            <div class="accordion__menu collapse bg-light border-top-1" id="course-toc-2">
+                                <div class="row p-3">
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">생산건수</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>13</em>
+                                                        <span class="text-dark font-size-16pt font-weight-bold">건</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 7건
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 6건
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">평균 L/T</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>1d 09:24:15</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 09:24:15
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 06:24:15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">L/T 증감율</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>+ 00:12:00</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 +00:16:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 -00:12:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">공정률</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>78.2%</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-12">
+                                                        <div class="cell blue-board">
+                                                            진행 45.2%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__toggle">
+                                <h5 class="m-0 text-nowrap">공정</h5>
+                                <div class="d-flex flex-column">
+                                    <div class="sort-btn-group ml-4">
+                                        <h6 class="d-inline-flex m-0 mr-2">형식1</h6>
+                                        <a href="#n" class="sort-btn active">전체</a>
+                                        <a href="#n" class="sort-btn">1공정</a>
+                                        <a href="#n" class="sort-btn">2공정</a>
+                                    </div>
+                                    <div class="sort-btn-group ml-4">
+                                        <h6 class="d-inline-flex m-0 mr-2">형식2</h6>
+                                        <a href="#n" class="sort-btn active">전체</a>
+                                        <a href="#n" class="sort-btn">1공정</a>
+                                        <a href="#n" class="sort-btn">2공정</a>
+                                    </div>
+                                </div>
+                                <a href="#n" class="d-flex h-100 align-items-center ml-auto px-3 circle-pin" data-toggle="collapse" data-target="#course-toc-3"
+                                data-parent="#parent"><span class="accordion__toggle-icon material-icons">keyboard_arrow_down</span></a>
+                            </div>
+                            <div class="accordion__menu collapse bg-light border-top-1" id="course-toc-3">
+                                <div class="row p-3">
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">생산건수</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>13</em>
+                                                        <span class="text-dark font-size-16pt font-weight-bold">건</span>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 7건
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 6건
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">평균 L/T</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>1d 09:24:15</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 09:24:15
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 06:24:15
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">L/T 증감율</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>+ 00:12:00</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-6">
+                                                        <div class="cell green-board">
+                                                            완료 +00:16:00
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="cell blue-board">
+                                                            진행 -00:12:00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-xxl-3 d-flex">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="d-flex flex-row align-items-center p-3 mb-3">
+                                                    <h5 class="d-flex mb-0">공정률</h5>
+                                                    <div class="cell ml-auto">
+                                                        <em>78.2%</em>
+                                                    </div>
+                                                </div>
+                                                <div class="row state-board d-flex">
+                                                    <div class="col-12">
+                                                        <div class="cell blue-board">
+                                                            진행 45.2%
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__toggle border-bottom-1">
+                                <h5 class="m-0 text-nowrap">기간</h5>
+                                <div class="d-flex flex-row ml-4">
+                                    <input id="flatpickrSample02" type="text" class="form-control" style="width: 300px;" placeholder="제품 S/N">
+                                    <a href="#n" class="btn btn-dark ml-2">검색</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end mb-4">
+                        <div class="ml-3 font-size-24pt mr-4">
+                            <span class="material-icons text-success font-size-24pt mr-1">circle</span>공정 완료
+                        </div>
+                        <div class="ml-3 font-size-24pt mr-4">
+                            <span class="material-icons text-primary font-size-24pt mr-1">circle</span>공정 진행
+                        </div>
+                        <div class="ml-3 font-size-24pt">
+                            <span class="material-icons text-secondary font-size-24pt mr-1">circle</span>공정 대기
+                        </div>
+                    </div>
+                    <div class="empty-state">
+                        <p class="empty-icon m-0"><span class="material-icons-outlined text-10">info</span></p>
+                        <em class="empty-txt m-0 font-size-24pt">현재 진행 중인 프로젝트가 없습니다.</em>
+                    </div>
+                </div>
+                <div id="sidebar-menu02" class="tab-pane" role="tabpanel">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mdk-drawer js-mdk-drawer layout-mini-secondary__drawer" id="default-drawer">
+        <div class="mdk-drawer__content js-sidebar-mini" data-responsive-width="1365px" data-layout="mini-secondary">
+            
+            <div class="sidebar sidebar-mini sidebar-left d-flex flex-column">
+                <!-- Brand -->
+                <a href="home.html" class="sidebar-brand p-0 navbar-height d-flex justify-content-center" data-toggle="tooltip"
+                    data-title="대시보드로 이동" data-placement="right" data-boundary="window">
+                    <span class="avatar avatar-sm "><img src="images/logo/symbol.svg" class="img-fluid" alt="logo" /></span>
+                </a>
+                <div class="flex d-flex flex-column justify-content-start" data-perfect-scrollbar>
+                    <ul class="nav flex-shrink-0 flex-nowrap flex-column sidebar-menu mb-0 js-sidebar-mini-tabs" role="tablist">
+                        <li class="sidebar-menu-item">
+                            <a class="sidebar-menu-button" href="dp_dashboard.html">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons-outlined">dashboard</i>
+                                <span class="sidebar-menu-text">대시보드</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item" data-title="Process" data-placement="right" data-container="body" data-boundary="window">
+                            <a class="sidebar-menu-button" href="#dp-process" data-toggle="tab" role="tab" aria-controls="dp-process">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons-outlined">fact_check</i>
+                                <span class="sidebar-menu-text">공정관리</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item" data-title="Setting" data-placement="right" data-container="body" data-boundary="window">
+                            <a class="sidebar-menu-button" href="#dp-setting" data-toggle="tab" role="tab" aria-controls="dp-setting">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons-outlined">settings</i>
+                                <span class="sidebar-menu-text">설정</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar sidebar-left flex sidebar-secondary" data-perfect-scrollbar>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="dp-dashboard">
+                        <div class="distribution-inner">
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dp-process">
+                        <div class="distribution-inner">
+                            <div class="container-fluid d-flex align-items-center py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <div class="mb-24pt">
+                                        <h3 class="mb-0">공정관리</h3>
+                                        <p class="text-70 mb-0">공정관리 페이지입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <ul class="info-panel accident-panel info-link">
+                                    <li>
+                                        <a href="dp_check_list.html">
+                                            <p>공정 체크</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">task_alt</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dp_comp_process.html">
+                                            <p>완료 공정</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons-outlined">assignment_turned_in</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dp_check_list_manage.html">
+                                            <p>공정 체크리스트 관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons-outlined">assignment</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dp_check_list_form.html">
+                                            <p>체크리스트 양식 관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">list</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="dp-setting">
+                        <div class="distribution-inner">
+                            <div class="container-fluid d-flex align-items-center py-4">
+                                <div class="flex d-flex align-items-center">
+                                    <div class="mb-24pt">
+                                        <h3 class="mb-0">설정</h3>
+                                        <p class="text-70 mb-0">설정 페이지입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <ul class="info-panel accident-panel info-link">
+                                    <li>
+                                        <a href="dp_factory_management.html">
+                                            <p>공장관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">content_paste_search</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <p>제품관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons">house_siding</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#n">
+                                            <p>거래처 관리</p>
+                                            <div class="cell">
+                                                <em><i class="material-icons-outlined">person_search</i></em>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- jQuery -->
+<script src="vendor/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="vendor/popper.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+
+<!-- Perfect Scrollbar -->
+<script src="vendor/perfect-scrollbar.min.js"></script>
+
+<!-- DOM Factory -->
+<script src="vendor/dom-factory.js"></script>
+
+<!-- MDK -->
+<script src="vendor/material-design-kit.js"></script>
+
+<!-- App JS -->
+<script src="js/app.js"></script>
+
+<!-- Preloader -->
+<script src="js/preloader.js"></script>
+
+<!-- Range Slider -->
+<script src="vendor/ion.rangeSlider.min.js"></script>
+<script src="js/ion-rangeslider.js"></script>
+
+<!-- Quill -->
+<script src="vendor/quill.min.js"></script>
+<script src="js/quill.js"></script>
+
+<!-- Global Settings -->
+<script src="js/settings.js"></script>
+
+<!-- DateRangePicker -->
+<script src="vendor/moment.min.js"></script>
+<script src="vendor/moment-range.js"></script>
+
+<!-- Chart.js -->
+<script src="vendor/Chart.min.js"></script>
+<script src="js/chartjs.js"></script>
+<script src="js/chartjs-rounded-bar.js"></script>
+
+<!-- Chart.js Samples -->
+<script src="js/page.ecommerce.js"></script>
+
+<!-- Flatpickr -->
+<script src="vendor/flatpickr/flatpickr.min.js"></script>
+<script src="js/flatpickr.js"></script>
+
+<script src="vendor/daterangepicker.js"></script>
+<script src="js/daterangepicker.js"></script>
+
+<!-- jQuery Mask Plugin -->
+<script src="vendor/jquery.mask.min.js"></script>
+
+<!-- modernizr.js -->
+<script src="js/modernizr.js"></script>
+
+<!-- Sidebar Mini JS -->
+<script src="js/sidebar-mini.js"></script>
+<script>
+    (function () {
+        'use strict';
+        // ENABLE sidebar menu tabs
+        $('.js-sidebar-mini-tabs [data-toggle="tab"]').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+        $('.js-sidebar-mini-tabs').on('show.bs.tab', function (e) {
+            $('.js-sidebar-mini-tabs > .active').removeClass('active')
+            $(e.target).parent().addClass('active')
+        })
+    })()
+</script>
+
+<!-- Dragula -->
+<script src="vendor/dragula/dragula.min.js"></script>
+
+<!-- Drag & Drop Page -->
+<script src="js/dragula.js"></script>
+
+<!-- List.js -->
+<script src="vendor/list.min.js"></script>
+<script src="js/list.js"></script>
+
+<!-- Tables -->
+<script src="js/toggle-check-all.js"></script>
+<script src="js/check-selected-row.js"></script>
+
+<!-- Select2 -->
+<script src="vendor/select2/select2.min.js"></script>
+<script src="js/select2.js"></script>
+
+<script src="js/custom.js"></script>
+<script src="js/jquery.menu-aim.js"></script> <!-- menu aim -->
+
+
+
+</body>
+
+</html>
