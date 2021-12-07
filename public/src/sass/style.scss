@@ -10077,6 +10077,8 @@ xnugget info
         }
         strong{
             color: #fff;
+            word-break: keep-all;
+            line-height: 1;
         }
     }
 }
