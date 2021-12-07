@@ -3970,6 +3970,9 @@ a.btn-add-cat{
         padding: .75rem 1.5rem;
         flex-direction: row;
         align-items: center;
+        &.active{
+            z-index: inherit;
+        }
         .list-els{
             a.card-title{
                 display: block;
