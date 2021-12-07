@@ -2007,6 +2007,10 @@ platform map
 
 -------------------------------- */
 /* global */
+[dir] .loader {
+    border-color: $identity;
+    border-bottom-color: transparent;
+}
 .layout-mini-secondary {
     .navbar {
         position: fixed;
