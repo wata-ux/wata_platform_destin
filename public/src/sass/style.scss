@@ -4029,6 +4029,11 @@ a.btn-add-cat{
                 color: $primary;
             }
         }
+        .card-subtitle{
+            word-break: keep-all;
+            margin-right: 1rem;
+            margin-top: .25rem;
+        }
     }
     .re-list-group-item{
         background-color: #f9f9f9;
